@@ -7,7 +7,7 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
-<% @include file="menu.jsp"; %>
+<%@include file="menu.jsp" %>
 <div class="container-fluid">
     <div class="p-3 mb-2 text-dark, rounded" style="background-color:lightblue">
         <form class="form-horizontal" action="j_security_check" method="post">
