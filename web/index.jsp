@@ -1,4 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<% response.sendRedirect("WEB/INF/accueil.jsp"); %>
+<%= "envoyer vers la page souhiatée via un forward dans un servlet" %>
 </html>
