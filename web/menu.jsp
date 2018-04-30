@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-sm" style="text-align: center">
                     <div class="content">
-                        <button type="button" class="btn btn-link"><h4>Livres</h4></button>
+                        <a href="livresView.jsp" class="btn btn-link btn-lg" role="button">Livres</a>
                     </div>
                 </div>
                 <div class="col-sm" style="text-align: right">
