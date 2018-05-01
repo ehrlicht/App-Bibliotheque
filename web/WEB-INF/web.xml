@@ -5,7 +5,7 @@
          version="3.1">
     <servlet>
         <servlet-name>acceuilServlet1</servlet-name>
-        <servlet-class>acceuilServlet</servlet-class>
+        <servlet-class>AcceuilServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>acceuilServlet1</servlet-name>
