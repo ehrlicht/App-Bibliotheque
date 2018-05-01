@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Bootstrap Example</title>
+    <title>Bibliothèque</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -17,22 +17,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<form name="frm" method="get" action="/menuAction">
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand text-light">App Bibliothèque</a>
+    <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
-        <a class="navbar-brand text-light">App Bibliothèque</a>
-        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="nav-link float-right" href="#">Livres</a>
+                <a class="nav-link float-right" href="/menuAction?bt=Livres">Livres</a> <!-- Possible de mieux faire ? -->
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
-            <button class="btn btn-danger navbar-btn">Connexion</button>
+            <button class="btn btn-danger navbar-btn" name="bt" value="Connexion">Connexion</button>
         </div>
     </div>
 </nav>
+</form>
 <br>
 </body>
 </html>

@@ -16,11 +16,11 @@
         <url-pattern>/index.htm</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>bookListServlet</servlet-name>
-        <servlet-class>BookListServlet</servlet-class>
+        <servlet-name>menuServlet</servlet-name>
+        <servlet-class>MenuServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-            <servlet-name>bookListServlet</servlet-name>
-        <url-pattern>/bookList</url-pattern>
+            <servlet-name>menuServlet</servlet-name>
+        <url-pattern>/menuAction</url-pattern>
     </servlet-mapping>
 </web-app>

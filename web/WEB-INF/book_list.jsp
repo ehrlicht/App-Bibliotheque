@@ -13,7 +13,7 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
-<%@include file="WEB-INF/menu.jsp" %>
+<%@include file="menu.jsp" %>
 <div class="container">
     <div class="row">
         <table class="table table-bordered">
