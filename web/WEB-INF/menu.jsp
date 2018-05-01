@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-sm" style="text-align: right">
-                    <input type="button" class="btn btn-primary btn-md" value="Connexion"></input>
+                    <input type="button" class="btn btn-primary btn-md" value="Connexion" formaction="/connexion"></input>
                 </div>
             </div>
         </div>
