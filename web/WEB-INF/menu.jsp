@@ -8,31 +8,30 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="container-fluid">
-    <div class="page-header">
-        <div class="p-3 mb-2 text-dark, rounded" style="background-color:lightgrey">
-            <div class="row">
-                <div class="col-sm" style="text-align: left">
-                    <div class="content">
-                        <h4>App Bibliothèque</h4>
-                    </div>
-                </div>
-                <div class="col-sm" style="text-align: center">
-                    <div class="content">
-                        <a href="listeLivres.jsp" class="btn btn-link btn-lg" role="button" formaction="/liste">Livres</a>
-                    </div>
-                </div>
-                <div class="col-sm" style="text-align: right">
-                    <input type="button" class="btn btn-primary btn-md" value="Connexion" formaction="/connexion"></input>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
+        <a class="navbar-brand text-light">App Bibliothèque</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link float-right" href="#">Livres</a>
+            </li>
+        </ul>
+        <div class="nav navbar-nav flex-row float-right flex-nowrap">
+            <button class="btn btn-danger navbar-btn">Connexion</button>
         </div>
     </div>
-</div>
+</nav>
 </body>
 </html>
