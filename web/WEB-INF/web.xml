@@ -4,11 +4,16 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>acceuilServlet1</servlet-name> <!-- le servlet-name peut être n'importe quoi ! -->
+        <servlet-name>acceuilServlet1</servlet-name>
         <servlet-class>acceuilServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>acceuilServlet1</servlet-name>
         <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/home</url-pattern>
+        <url-pattern>/index.html</url-pattern>
+        <url-pattern>/index</url-pattern>
+        <url-pattern>/index.htm</url-pattern>
+        <url-pattern>/accueil</url-pattern>
     </servlet-mapping>
 </web-app>
