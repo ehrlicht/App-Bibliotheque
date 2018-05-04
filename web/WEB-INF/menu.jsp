@@ -17,7 +17,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form name="frm" method="get" action="/menuAction">
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <a class="navbar-brand text-light">App Bibliothèque</a>
     <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -26,15 +25,17 @@
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="nav-link float-right" href="/menuAction?bt=Livres">Livres</a> <!-- Possible de mieux faire ? -->
+                <a class="nav-link float-right" href="/books">Livres</a>
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
-            <button class="btn btn-danger navbar-btn" name="bt" value="Connexion">Connexion</button>
+            <form name="frm" method="get" action="/auth">
+                <button class="btn btn-danger navbar-btn">Connexion</button>
+            </form>
         </div>
     </div>
 </nav>
-</form>
+
 <br>
 </body>
 </html>

@@ -21,6 +21,22 @@
     </servlet>
     <servlet-mapping>
             <servlet-name>menuServlet</servlet-name>
-        <url-pattern>/menuAction</url-pattern>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>authenticatioServlet</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authenticatioServlet</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>bookListServlet</servlet-name>
+        <servlet-class>BookListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookListServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
     </servlet-mapping>
 </web-app>
