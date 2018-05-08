@@ -1,3 +1,5 @@
+package ch.bibliotheque;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,6 +16,8 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").forward(req, resp);
+        boolean clicked = false;
+        req.setAttribute("clicked", clicked);
+        req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
     }
 }

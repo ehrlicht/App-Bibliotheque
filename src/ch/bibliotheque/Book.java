@@ -1,3 +1,5 @@
+package ch.bibliotheque;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,14 +12,14 @@ public class Book {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String title;
-    private String isbn;
     private String author;
+    private String publisher;
     private Date publicationDate;
 
-    public Book(String title, String isbn, String author, Date publicationDate) {
+    public Book(String title, String author, String publisher, Date publicationDate) {
         this.title = title;
-        this.isbn = isbn;
         this.author = author;
+        this.publisher = publisher;
         this.publicationDate = publicationDate;
     }
 
@@ -36,12 +38,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getIsbn() {
-        return isbn;
+    public String getPublisher() {
+        return publisher;
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
     public String getAuthor() {

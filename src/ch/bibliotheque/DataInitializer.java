@@ -1,3 +1,5 @@
+package ch.bibliotheque;
+
 import javax.inject.Inject;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -23,8 +25,8 @@ public class DataInitializer implements ServletContextListener {
         Book b1 = null;
         Book b2 = null;
         try {
-            b1 = new Book("Ma vie mon Oeuvre", "87962414", "Moi", sdf.parse("01.11.2014"));
-            b2 = new Book("La Bible", "34214134", "Dieu", new Date());
+            b1 = new Book("Ma vie mon Oeuvre", "Moi", "Jacquette", sdf.parse("01.11.2014"));
+            b2 = new Book("La Bible", "Dieu", "Bigbang Ed.", new Date());
         } catch (ParseException e) {
             e.printStackTrace();
         }

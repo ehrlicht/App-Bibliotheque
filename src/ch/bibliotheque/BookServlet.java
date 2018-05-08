@@ -1,3 +1,5 @@
+package ch.bibliotheque;
+
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,19 +16,17 @@ import java.util.List;
 public class BookServlet extends HttpServlet {
 
     private final BookService bs;
-    private final Foo foo;
 
     @Inject //permet de faire la même chose qu'EJB et plus encore
-    public BookServlet (BookService bs, Foo foo) {
+    public BookServlet (BookService bs) {
         this.bs = bs;
-        this.foo = foo; //Test de scopes (voir dans la classe Foo)
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
         String title = req.getParameter("title");
-        String isbn = req.getParameter("isbn");
+        String publisher = req.getParameter("publisher");
         String author = req.getParameter("author");
         String publicationDate = req.getParameter("publicationDate");
         Date pd =  new Date();
@@ -35,7 +35,7 @@ public class BookServlet extends HttpServlet {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        bs.save(new Book(title, isbn, author, pd));
+        bs.save(new Book(title, author, publisher, pd));
         resp.sendRedirect(req.getContextPath()+"/run");
     }
 

@@ -3,7 +3,7 @@
 
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
-        <class>Book</class>
+        <class>ch.bibliotheque.Book</class>
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" />
             <property name="openjpa.Log" value="DefaultLevel=TRACE, Tool=INFO"/>
