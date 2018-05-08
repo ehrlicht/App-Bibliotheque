@@ -10,6 +10,7 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("clicked", null);
         req.getRequestDispatcher("/WEB-INF/main.jsp").forward(req, resp);
     }
 }

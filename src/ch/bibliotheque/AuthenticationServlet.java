@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//Salut Monsieur
 public class AuthenticationServlet extends HttpServlet {
 
     @Override
@@ -16,8 +15,7 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        boolean clicked = false;
-        req.setAttribute("clicked", clicked);
+        req.setAttribute("clicked", new Object());
         req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
     }
 }
