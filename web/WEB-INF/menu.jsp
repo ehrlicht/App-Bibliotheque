@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mgtub
-  Date: 4/14/2018
-  Time: 11:30 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     Object isClicked = request.getAttribute("clicked");
@@ -29,7 +22,7 @@
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="nav-link float-right" href="/books">Livres</a>
+                <a class="btn btn-link float-right text-light" href="/books">Livres</a>
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
