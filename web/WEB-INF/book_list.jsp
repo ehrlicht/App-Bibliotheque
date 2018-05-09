@@ -50,7 +50,6 @@
             </tr>
             </tbody>
         </table>
-
     </div>
     <div class="text-right">
         <button type="button" class="btn btn-outline-info">Nouveau</button>

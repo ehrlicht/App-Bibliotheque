@@ -5,30 +5,53 @@
     <title>Connexion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+    <style type="text/css">
+        <%@ include file="/styles/authentication_style.css" %>
+    </style>
 </head>
 <body>
-<%  request.setAttribute("login", true);%>
+<%  request.setAttribute("login", true); %>
 <%@include file="menu.jsp" %>
-<div class="container-fluid">
-    <div class="p-3 mb-2 text-dark, rounded" style="background-color:lightblue">
-        <form class="form-horizontal" action="j_security_check" method="post">
-            <div class="form-group">
-                <div class="form-group row">
-                    <label class="control-label col-sm-1" for="username">Identifiant :</label>
-                    <input type="text" class="form-control col-sm-2" id="username" placeholder="Entrer identifiant"
-                           name="j_username" size="25">
+
+<div class="container">
+
+        <form id="form_auth" class="form-horizontal" role="form" action="j_security_check" method="post">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-12 text-center">
+                    <h2 id="title">Connexion</h2>
+                    <hr>
                 </div>
-                <div class="form-group row">
-                    <label class="control-label col-sm-1" for="pwd">Mot de passe :</label>
-                    <input type="password" class="form-control col-sm-2" id="pwd" placeholder="Entrer mot de passe"
-                           name="j_password">
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-12">
+                    <div class="form-group has-danger">
+                        <label class="sr-only">Identifiant</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control"  id="username" placeholder="Entrer identifiant" name="j_username" required autofocus>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group row col-sm-4">
-                    <button type="submit" class="btn btn-default">Se connecter</button>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-12">
+                    <div class="form-group">
+                        <label class="sr-only">Mot de passe</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" name="j_password" id="pwd" placeholder="Entrer mot de passe" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-12">
+                    <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i> Login</button>
                 </div>
             </div>
         </form>
-    </div>
 </div>
+
+
 </body>
 </html>
