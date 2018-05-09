@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/projet_635_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/projet_635_war_exploded/WEB-INF/web.xml" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/styles/authentication_style.css" afterPath="$PROJECT_DIR$/web/styles/authentication_style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="180">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -649,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525818056336</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Comportement bar de menu avec bouton de connexion qui s'affiche et se cache correctement">
+      <created>1525867003437</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1525867003437</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32947000" />
+    <option name="totallyTimeSpent" value="33072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
@@ -733,7 +739,8 @@
     <MESSAGE value="renamed  in english" />
     <MESSAGE value="Correction" />
     <MESSAGE value="basic links for booklist and connexion done" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic links for booklist and connexion done" />
+    <MESSAGE value="Comportement bar de menu avec bouton de connexion qui s'affiche et se cache correctement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comportement bar de menu avec bouton de connexion qui s'affiche et se cache correctement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1104,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>
