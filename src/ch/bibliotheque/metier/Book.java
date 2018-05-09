@@ -1,4 +1,4 @@
-package ch.bibliotheque;
+package ch.bibliotheque.metier;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

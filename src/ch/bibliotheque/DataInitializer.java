@@ -1,5 +1,7 @@
 package ch.bibliotheque;
 
+import ch.bibliotheque.metier.Book;
+
 import javax.inject.Inject;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

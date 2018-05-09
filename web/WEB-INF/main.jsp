@@ -17,7 +17,7 @@
                 </span>
             </div>
             <div class="col-md-auto">
-                <img class="img-fluid"
+                <img class="rounded img-fluid"
                      src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Long_Room_Interior%2C_Trinity_College_Dublin%2C_Ireland_-_Diliff.jpg"
                      style="width:450px" class="rounded"></div>
         </div>

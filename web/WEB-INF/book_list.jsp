@@ -15,8 +15,8 @@
 <body>
 <%@include file="menu.jsp" %>
 <div class="container">
-    <div class="row">
-        <table class="table table-bordered">
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm">
             <thead>
             <tr>
                 <th>Titre</th>
