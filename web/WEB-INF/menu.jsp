@@ -33,7 +33,9 @@
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
             <form name="frm" method="get" action="/auth">
                 <% if (clicked) { %>
-                    <button class="btn btn-danger navbar-btn">Connexion</button>
+                    <button class="btn btn-danger navbar-btn visible">Connexion</button>
+                <% } else { %>
+                    <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
                 <% } %>
             </form>
         </div>

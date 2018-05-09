@@ -5,7 +5,7 @@
          version="3.1">
     <servlet>
         <servlet-name>acceuilServlet1</servlet-name>
-        <servlet-class>ch.bibliotheque.views.MainServlet</servlet-class>
+        <servlet-class>ch.bibliotheque.MainServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>acceuilServlet1</servlet-name>
@@ -17,7 +17,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>menuServlet</servlet-name>
-        <servlet-class>ch.bibliotheque.views.MenuServlet</servlet-class>
+        <servlet-class>ch.bibliotheque.MenuServlet</servlet-class>
     </servlet>
     <servlet-mapping>
             <servlet-name>menuServlet</servlet-name>
@@ -25,7 +25,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>authenticatioServlet</servlet-name>
-        <servlet-class>ch.bibliotheque.views.AuthenticationServlet</servlet-class>
+        <servlet-class>ch.bibliotheque.AuthenticationServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>authenticatioServlet</servlet-name>
@@ -33,7 +33,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>bookListServlet</servlet-name>
-        <servlet-class>ch.bibliotheque.views.BookListServlet</servlet-class>
+        <servlet-class>ch.bibliotheque.BookListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>bookListServlet</servlet-name>
