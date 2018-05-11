@@ -1,5 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%boolean isAuthenticated = request.isUserInRole("ADMIN");%>
+<%
+    boolean isAuthenticated = request.isUserInRole("ADMIN");
+    String btnLabel;
+%>
 <html>
 <head>
     <title>Bibliothèque</title>
@@ -23,14 +26,15 @@
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
-            <form name="frm" method="get" action="/auth">
+
+            <form name="frm" method="get" action=<%="/auth"%>>
                 <% if (request.getRequestURI().equals("/auth")) { %>
                 <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
-                        <button class="btn btn-danger navbar-btn visible">Déconnexion</button>
+                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="deconnexion">Déconnexion</button>
                     <% } else { %>
-                        <button class="btn btn-danger navbar-btn visible">Connexion</button>
+                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="connexion">Connexion</button>
                     <% } %>
                 <% } %>
             </form>

@@ -15,13 +15,16 @@ public class AuthenticationServlet extends HttpServlet {
         String pwd = req.getParameter("pwd");
         req.login(user, pwd);
         resp.sendRedirect("/books");
-        System.out.println(req.isUserInRole("ADMIN"));
-        //req.getRequestDispatcher("/WEB-INF/book_list.jsp").forward(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
+        if (Boolean.TRUE.equals(req.getParameter("cbtn").equals("connexion"))) {
+            req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
+        }
+        if (Boolean.TRUE.equals(req.getParameter("cbtn").equals("deconnexion"))) {
+            req.logout();
+            resp.sendRedirect("/main");
+        }
     }
 }
