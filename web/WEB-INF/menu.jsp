@@ -28,7 +28,7 @@
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
 
             <form name="frm" method="get" action=<%="/auth"%>>
-                <% if (request.getRequestURI().equals("/auth")) { %>
+                <% if (request.getRequestURI().equals("/auth") || request.getRequestURI().equals("/WEB-INF/authentication_error_page.jsp")) { %>
                 <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>

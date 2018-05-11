@@ -45,6 +45,12 @@
         <url-pattern>/books</url-pattern>
     </servlet-mapping>
 
+    <!-- ERROR HANDLING -->
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/WEB-INF/authentication_error_page.jsp</location>
+    </error-page>
+
     <!-- AUTHENTICATION
     <security-role>
         <role-name>ADMIN</role-name>
