@@ -1,4 +1,4 @@
-package ch.bibliotheque;
+package ch.bibliotheque.dao;
 
 import ch.bibliotheque.metier.Book;
 
