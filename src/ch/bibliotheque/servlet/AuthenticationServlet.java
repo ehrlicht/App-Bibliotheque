@@ -14,7 +14,7 @@ public class AuthenticationServlet extends HttpServlet {
         String user = req.getParameter("user");
         String pwd = req.getParameter("pwd");
         req.login(user, pwd);
-        resp.sendRedirect("/books");
+        resp.sendRedirect("/main");
     }
 
     @Override
