@@ -32,14 +32,20 @@
                 <td>Doe</td>
                 <td>J.Spring</td>
                 <td>1991</td>
-                <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
+                <td>
+                    <% if (isAuthenticated) { %>
+                        <button type="button" class="btn btn-outline-danger visible">Supprimer</button>
+                    <% } else { %>
+                        <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>
+                    <% } %>
+                </td>
             </tr>
             <tr>
                 <td>Heidi</td>
                 <td>Doe</td>
                 <td>J.Spring</td>
                 <td>1991</td>
-                <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
+                <td><button type="button" class="btn btn-outline-danger visible">Supprimer</button></td>
             </tr>
             <tr>
                 <td>Heidi</td>
@@ -52,7 +58,9 @@
         </table>
     </div>
     <div class="text-right">
-        <button type="button" class="btn btn-outline-info">Nouveau</button>
+        <% if (isAuthenticated) { %>
+            <button type="button" class="btn btn-outline-info">Nouveau</button>
+        <% } %>
     </div>
 </div>
 </body>
