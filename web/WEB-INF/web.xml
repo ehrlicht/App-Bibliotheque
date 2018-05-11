@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!-- SERVLET MAPPING -->
     <servlet>
         <servlet-name>acceuilServlet1</servlet-name>
         <servlet-class>ch.bibliotheque.servlet.MainServlet</servlet-class>
@@ -44,29 +45,16 @@
         <url-pattern>/books</url-pattern>
     </servlet-mapping>
 
-    <!-- ******************************** -->
-    <!-- *** AUTHENTIFICATION AVANCEE *** -->
-    <!-- ******************************** -->
+    <!-- ERROR HANDLING -->
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/WEB-INF/authentication_error_page.jsp</location>
+    </error-page>
 
-    <!-- DEFINITION DES ROLES -->
-
+    <!-- AUTHENTICATION
     <security-role>
         <role-name>ADMIN</role-name>
     </security-role>
-
-    <!--ATTRIBUTION DES ROLES AYANTS DROITS -->
-
-    <security-constraint>
-        <web-resource-collection>
-            <web-resource-name>Secure ressource</web-resource-name>
-            <url-pattern>/secure/*</url-pattern>
-        </web-resource-collection>
-        <auth-constraint>
-            <role-name>ADMIN</role-name>
-        </auth-constraint>
-    </security-constraint>
-
-    <!-- MISE EN PLACE DE LA METHODE D'AUTHENTIFICATION (FORM) -->
 
     <login-config>
         <auth-method>FORM</auth-method>
@@ -75,5 +63,6 @@
             <form-error-page>/WEB-INF/authentication_page.jsp</form-error-page>
         </form-login-config>
     </login-config>
+    -->
 
 </web-app>
