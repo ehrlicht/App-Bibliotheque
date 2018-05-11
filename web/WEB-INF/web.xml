@@ -59,7 +59,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Secure ressource</web-resource-name>
-            <url-pattern>/secure/*</url-pattern>
+            <url-pattern>/books</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>ADMIN</role-name>
