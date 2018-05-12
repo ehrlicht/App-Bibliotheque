@@ -34,13 +34,15 @@ public class NewBookServlet extends HttpServlet {
         String editeur = req.getParameter("editeur_input");
         String annee_input = req.getParameter("annee_input");
         Date pd =  new Date();
-        try {
-            pd = sdf.parse(annee_input);
-        } catch (ParseException e) {
-            e.printStackTrace();
+        if (!titre.isEmpty() && !auteur.isEmpty() && !editeur.isEmpty() && !annee_input.isEmpty()) {
+            try {
+                pd = sdf.parse(annee_input);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            bs.save(new Book(titre, auteur, editeur, pd));
+            resp.sendRedirect(req.getContextPath() + "/books");
         }
-        bs.save(new Book(titre, auteur, editeur, pd));
-        resp.sendRedirect(req.getContextPath()+"/books");
 
     }
 }

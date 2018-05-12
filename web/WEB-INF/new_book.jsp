@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Calendar" %><%--
   Created by IntelliJ IDEA.
   User: mgtub
   Date: 5/1/2018
@@ -46,7 +47,7 @@
         <div class="form-group row">
             <label  class="col-sm-2 col-form-label">Ann&eacute;e</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="annee_input" id="annee_input" placeholder="Entrer l'annee">
+                <input type="numeric" class="form-control" name="annee_input" id="annee_input" maxlength="4" max="9999" placeholder="Entrer l'annee">
             </div>
         </div>
         <div class="form-group row">

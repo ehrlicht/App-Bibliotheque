@@ -19,15 +19,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>menuServlet</servlet-name>
-        <servlet-class>ch.bibliotheque.servlet.MenuServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-            <servlet-name>menuServlet</servlet-name>
-        <url-pattern>/menu</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>authenticatioServlet</servlet-name>
         <servlet-class>ch.bibliotheque.servlet.AuthenticationServlet</servlet-class>
     </servlet>

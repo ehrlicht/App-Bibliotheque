@@ -29,10 +29,10 @@
 
             <form name="frm" method="get" action=<%="/auth"%>>
                 <% if (request.getRequestURI().equals("/auth") || request.getRequestURI().equals("/WEB-INF/authentication_error_page.jsp")) { %>
-                <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
+                     <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
-                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="deconnexion">Déconnexion</button>
+                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="deconnexion">D&eacute;connexion</button>
                     <% } else { %>
                         <button class="btn btn-danger navbar-btn visible" name="cbtn" value="connexion">Connexion</button>
                     <% } %>
