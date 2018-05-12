@@ -45,6 +45,15 @@
         <url-pattern>/books</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>newBookServlet</servlet-name>
+        <servlet-class>ch.bibliotheque.servlet.NewBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newBookServlet</servlet-name>
+        <url-pattern>/newBook</url-pattern>
+    </servlet-mapping>
+
     <!-- ERROR HANDLING -->
     <error-page>
         <exception-type>javax.servlet.ServletException</exception-type>
