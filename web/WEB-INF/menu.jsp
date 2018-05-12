@@ -41,7 +41,5 @@
         </div>
     </div>
 </nav>
-
-<br>
 </body>
 </html>
