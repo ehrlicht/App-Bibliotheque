@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -588,7 +586,7 @@
       <workItem from="1526024475327" duration="4547000" />
       <workItem from="1526035012317" duration="4202000" />
       <workItem from="1526044846729" duration="6347000" />
-      <workItem from="1526161666662" duration="599000" />
+      <workItem from="1526161666662" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="index.jsp redirection directives">
       <created>1524826536279</created>
@@ -779,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526083040012</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Alerte de mauvais mdp">
+      <created>1526162272220</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1526162272220</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56792000" />
+    <option name="totallyTimeSpent" value="56810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
