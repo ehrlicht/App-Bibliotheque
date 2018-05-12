@@ -8,6 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/new_book.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/new_book.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +32,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="170">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#831#839#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="623">
+              <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -64,8 +69,30 @@
       <file leaf-file-name="DataInitializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+            <state relative-caret-position="323">
+              <caret line="29" column="135" lean-forward="false" selection-start-line="29" selection-start-column="135" selection-end-line="29" selection-end-column="135" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_book.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/new_book.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+              <folding>
+                <element signature="e#1990#1998#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MenuServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -107,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/authenticationServlet.java" />
         <option value="$PROJECT_DIR$/src/AcceuilServlet.java" />
         <option value="$PROJECT_DIR$/src/ListeLivresServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/new_book.jsp" />
         <option value="$PROJECT_DIR$/src/AuthenticationServlet.java" />
         <option value="$PROJECT_DIR$/src/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/MenuServlet.java" />
@@ -129,12 +155,13 @@
         <option value="$PROJECT_DIR$/web/styles/authentication_style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/authentication_error_page.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/authentication_page.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/new_book.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
       </list>
     </option>
   </component>
@@ -295,12 +322,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/projet_635_war_exploded/WEB-INF/web.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/servlet/NewBookServlet.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/book_list.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/new_book.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/web.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -586,7 +609,7 @@
       <workItem from="1526024475327" duration="4547000" />
       <workItem from="1526035012317" duration="4202000" />
       <workItem from="1526044846729" duration="6347000" />
-      <workItem from="1526161666662" duration="617000" />
+      <workItem from="1526161666662" duration="1590000" />
     </task>
     <task id="LOCAL-00001" summary="index.jsp redirection directives">
       <created>1524826536279</created>
@@ -784,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526162272220</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="correction de l'affichage de la liste">
+      <created>1526162306556</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1526162306556</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56810000" />
+    <option name="totallyTimeSpent" value="57783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -804,7 +834,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39598733" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39598733" sideWeight="0.49722221" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,7 +878,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="Connexion et deconnexion fonctionnel" />
     <MESSAGE value="Alerte de mauvais mdp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alerte de mauvais mdp" />
+    <MESSAGE value="correction de l'affichage de la liste" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction de l'affichage de la liste" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -914,7 +945,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="e#831#839#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,13 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MenuServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1139,14 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/new_book.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1158,14 +1176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1220,19 +1230,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="623">
+          <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="29" column="135" lean-forward="false" selection-start-line="29" selection-start-column="135" selection-end-line="29" selection-end-column="135" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/new_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="56" column="11" lean-forward="true" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+          <folding>
+            <element signature="e#1990#1998#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MenuServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#831#839#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

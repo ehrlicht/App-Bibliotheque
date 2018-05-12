@@ -20,38 +20,16 @@ public class DataInitializer implements ServletContextListener {
         this.bs = bs;
     }
 
-    SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        Book b1 = null;
-        Book b2 = null;
-        Book b3 = null;
-        Book b4 = null;
-        Book b5 = null;
-        Book b6 = null;
-        Book b7 = null;
-        Book b8 = null;
-        try {
-            b1 = new Book("La Bible", "Dieu", "Bigbang Publications.", new Date());
-            b2 = new Book("Les aventures de Tata au pays du zeub noir", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b3 = new Book("Les aventures de Tata - On a marché sur ma lune", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b4 = new Book("Les aventures de Tata - Le cigare du gros Léon", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b5 = new Book("Les aventures de Tata - Les 2 boules de Christelle", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b6 = new Book("Les aventures de Tata - Les bijoux de la casse moi le fion", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b7 = new Book("Les aventures de Tata - Les 2 boules de Christelle", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-            b8 = new Book("Les aventures de Tata - Le temple du fist fucking", "Hergé", "Editions la Jacquette", sdf.parse("01.11.2014"));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        bs.save(b1);
-        bs.save(b2);
-        bs.save(b3);
-        bs.save(b4);
-        bs.save(b5);
-        bs.save(b6);
-        bs.save(b7);
-        bs.save(b8);
+           bs.save(new Book("La Bible", "Dieu", "Bigbang Publications.", new Date()));
+           bs.save(new Book("Les aventures de Tata au pays du zeub noir", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - On a marché sur ma lune", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - Le cigare du gros Léon", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - Les 2 boules de Christelle", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - Les bijoux de la casse moi le fion", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - Les 2 boules de Christelle", "Hergé", "Editions la Jacquette", new Date()));
+           bs.save(new Book("Les aventures de Tata - Le temple du fist fucking", "Hergé", "Editions la Jacquette", new Date()));
     }
 
     @Override

@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="form-group row">
-            <label  class="col-sm-2 col-form-label">Année</label>
+            <label  class="col-sm-2 col-form-label">Ann&eacute;e</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="annee_input" id="annee_input" placeholder="Entrer l'annee">
             </div>
