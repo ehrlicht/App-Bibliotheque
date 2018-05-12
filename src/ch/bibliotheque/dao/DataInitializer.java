@@ -46,6 +46,12 @@ public class DataInitializer implements ServletContextListener {
         }
         bs.save(b1);
         bs.save(b2);
+        bs.save(b3);
+        bs.save(b4);
+        bs.save(b5);
+        bs.save(b6);
+        bs.save(b7);
+        bs.save(b8);
     }
 
     @Override
