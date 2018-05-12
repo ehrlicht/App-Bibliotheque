@@ -1,4 +1,5 @@
-<%--
+<%@ page import="ch.bibliotheque.metier.Book" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Artrit
   Date: 26.04.2018
@@ -16,6 +17,7 @@
 <%@include file="menu.jsp" %>
 <div class="container">
     <div class="table-responsive">
+        <% List<Book> books = (List) request.getAttribute("books");%>
         <table class="table table-bordered table-sm">
             <thead>
             <tr>
@@ -27,6 +29,22 @@
             </tr>
             </thead>
             <tbody>
+            <% for (Book book : books){ %>
+            <tr>
+                <td><%= book.getTitle()%></td>
+                <td><%= book.getAuthor()%></td>
+                <td><%= book.getPublisher()%></td>
+                <td><%= book.getPublicationDate()%></td>
+            </tr>
+            <% }%>
+                <td>
+                    <% if (isAuthenticated) { %>
+                    <button type="button" class="btn btn-outline-danger visible">Supprimer</button>
+                    <% } else { %>
+                    <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>
+                    <% } %>
+                </td>
+            </tr>
             <tr>
                 <td>Heidi</td>
                 <td>Doe</td>
