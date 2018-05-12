@@ -34,24 +34,24 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Auteur</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control"name="auteur_input" id="auteur_input" placeholder="Entrer l'auteur">
+                <input type="text" class="form-control" name="auteur_input" id="auteur_input" placeholder="Entrer l'auteur">
             </div>
         </div>
         <div class="form-group row">
             <label  class="col-sm-2 col-form-label">Editeur</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="editeur_input" id="editeur_input" placeholder="Entrer l'éditeur">
+                <input type="text" class="form-control" name="editeur_input" id="editeur_input" placeholder="Entrer l'editeur">
             </div>
         </div>
         <div class="form-group row">
             <label  class="col-sm-2 col-form-label">Année</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="annee_input" id="annee_input" placeholder="Entrer l'année">
+                <input type="text" class="form-control" name="annee_input" id="annee_input" placeholder="Entrer l'annee">
             </div>
         </div>
         <div class="form-group row">
             <div class="offset-sm-2 col-sm-10">
-                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-block">Enregistrer nouveau livre</button>
             </div>
         </div>
     </form>

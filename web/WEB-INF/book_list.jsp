@@ -35,8 +35,8 @@
                 <td><%= book.getAuthor()%></td>
                 <td><%= book.getPublisher()%></td>
                 <td><%= book.getPublicationDate()%></td>
-            </tr>
-            <% }%>
+
+
                 <td>
                     <% if (isAuthenticated) { %>
                     <button type="button" class="btn btn-outline-danger visible">Supprimer</button>
@@ -45,39 +45,14 @@
                     <% } %>
                 </td>
             </tr>
-            <tr>
-                <td>Heidi</td>
-                <td>Doe</td>
-                <td>J.Spring</td>
-                <td>1991</td>
-                <td>
-                    <% if (isAuthenticated) { %>
-                        <button type="button" class="btn btn-outline-danger visible">Supprimer</button>
-                    <% } else { %>
-                        <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>
-                    <% } %>
-                </td>
-            </tr>
-            <tr>
-                <td>Heidi</td>
-                <td>Doe</td>
-                <td>J.Spring</td>
-                <td>1991</td>
-                <td><button type="button" class="btn btn-outline-danger visible">Supprimer</button></td>
-            </tr>
-            <tr>
-                <td>Heidi</td>
-                <td>Doe</td>
-                <td>J.Spring</td>
-                <td>1991</td>
-                <td><button type="button" class="btn btn-outline-danger">Supprimer</button></td>
-            </tr>
+            <% }%>
+
             </tbody>
         </table>
     </div>
     <div class="text-right">
         <% if (isAuthenticated) { %>
-            <button type="button" class="btn btn-outline-info">Nouveau</button>
+        <a href="<%= request.getContextPath()+"/newBook"%>" class="btn btn-info" role="button">Nouveau livre</a>
         <% } %>
     </div>
 </div>
