@@ -29,43 +29,33 @@
             <hr>
         </div>
     </div>
-    <form id="form_newBook" class="form-horizontal" method="post">
+    <form id="form_newBook" class="form-horizontal" method="post" action="addBook">
         <div class="row justify-content-center align-items-left">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
-                <label>Titre</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" name="titre_input" id="titre_input" placeholder="Anna Karenina">
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-left">
-            <div class="col-xl-6 col-12">
-                <div class="form-group has-feedback">
-                <label>Auteur</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" name="auteur_input" id="auteur_input" placeholder="Leo Tolstoy">
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-left">
-            <div class="col-xl-6 col-12">
-                <div class="form-group has-feedback">
-                <label>Editeur</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" name="editeur_input" id="editeur_input" placeholder="Rousky vestnik">
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-xl-6 col-12">
-                <div class="form-group has-feedback">
-                <label>Ann&eacute;e</label>
+                    <label>Titre</label>
                     <div class="input-group">
-                        <input type="numeric" class="form-control" name="annee_input" id="annee_input" maxlength="4" min="-3500" max="9999" placeholder="1877">
+                        <input type="text" class="form-control" name="title" placeholder="Anna Karénine">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-left">
+            <div class="col-xl-6 col-12">
+                <div class="form-group has-feedback">
+                    <label>Auteur</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="author" placeholder="Léon Tolstoï">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-left">
+            <div class="col-xl-6 col-12">
+                <div class="form-group has-feedback">
+                    <label>Editeur</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="publisher" placeholder="Rousky vestnik">
                     </div>
                 </div>
             </div>
@@ -73,12 +63,22 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
-                <label class="sr-only">Enregistrer</label>
-                <div class="input-group">
-                    <button type="submit" class="btn btn-primary btn-block">Enregistrer nouveau livre</button>
+                    <label>Ann&eacute;e</label>
+                    <div class="input-group">
+                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877">
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-xl-6 col-12">
+                <div class="form-group has-feedback">
+                    <label class="sr-only">Enregistrer</label>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-primary btn-block">Enregistrer nouveau livre</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
     <div class="row justify-content-center align-items-center">

@@ -27,7 +27,7 @@ public class AuthenticationServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (Boolean.TRUE.equals(req.getParameter("cbtn").equals("connexion"))) {
-            req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
+            req.getRequestDispatcher("/WEB-INF/authentication.jsp").include(req, resp);
         }
         if (Boolean.TRUE.equals(req.getParameter("cbtn").equals("deconnexion"))) {
             req.logout();

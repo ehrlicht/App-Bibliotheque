@@ -35,7 +35,7 @@
                 <div class="form-group has-feedback">
                     <label>Titre</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="title" placeholder="Anna Karenina">
+                        <input type="text" class="form-control" name="title" placeholder="Anna Karénine">
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <div class="form-group has-feedback">
                     <label>Auteur</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="author" placeholder="Leo Tolstoy">
+                        <input type="text" class="form-control" name="author" placeholder="Léon Tolstoï">
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <div class="form-group has-feedback">
                     <label>Ann&eacute;e</label>
                     <div class="input-group">
-                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-3500" max="9999" placeholder="1877">
+                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877">
                     </div>
                 </div>
             </div>

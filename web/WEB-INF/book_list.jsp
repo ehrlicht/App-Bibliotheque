@@ -40,10 +40,10 @@
         <table id="cssTable" class="table table-bordered table-sm">
             <thead>
             <tr>
-                <th>Titre</th>
-                <th>Auteur(s)</th>
-                <th>Editeur</th>
-                <th>Année</th>
+                <th class="text-left">Titre</th>
+                <th class="text-left">Auteur(s)</th>
+                <th class="text-left">Editeur</th>
+                <th class="text-center">Année</th>
                     <% if (isAuthenticated) { %>
                         <th></th>
                     <% }%>
@@ -53,10 +53,10 @@
             <tr>
                 <% if (isAuthenticated) { %>
                 <td><input type="text" value="<%= book.getTitle()%>"/></td>
-                    <td><input type="text" value="<%= book.getAuthor()%>"/></td>
-                    <td><input type="text" value="<%= book.getPublisher()%>"/></td>
-                    <td><input type="text" value="<%= book.getPublicationDate()%>"/></td>
-                    <td align="center" >
+                    <td style="width: 17.5%"><input type="text" value="<%= book.getAuthor()%>"/></td>
+                    <td style="width: 17.5%"><input type="text" value="<%= book.getPublisher()%>"/></td>
+                    <td style="width: 7.5%"><input type="text" value="<%= book.getYear().getValue()%>"/></td>
+                    <td style="width: 12.5%" align="center" >
                     <form class="form-horizontal" action="removeBook" method="post">
                         <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer</button>
                     </form>
@@ -65,7 +65,7 @@
                     <td><%= book.getTitle()%></td>
                     <td><%= book.getAuthor()%></td>
                     <td><%= book.getPublisher()%></td>
-                    <td><%= book.getPublicationDate()%></td>
+                    <td class="text-center"><%= book.getYear().getValue()%></td>
                 <% }%>
             </tr>
             <% }%>

@@ -2,6 +2,7 @@ package ch.bibliotheque.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Year;
 import java.util.Date;
 
 @Entity
@@ -13,17 +14,16 @@ public class Book {
     private String title;
     private String author;
     private String publisher;
-    private Date publicationDate;
+    private Year year;
 
-    public Book(String title, String author, String publisher, Date publicationDate) {
+    public Book(String title, String author, String publisher, Year year) {
         this.title = title;
         this.author = author;
         this.publisher = publisher;
-        this.publicationDate = publicationDate;
+        this.year = year;
     }
 
-    public Book() {
-    }
+    public Book() {}
 
     public long getId() {
         return id;
@@ -53,11 +53,7 @@ public class Book {
         this.author = author;
     }
 
-    public Date getPublicationDate() {
-        return publicationDate;
-    }
+    public Year getYear() { return year; }
 
-    public void setPublicationDate(Date publicationDate) {
-        this.publicationDate = publicationDate;
-    }
+    public void setYear(Year year) { this.year = year; }
 }

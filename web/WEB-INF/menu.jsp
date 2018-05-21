@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     boolean isAuthenticated = request.isUserInRole("ADMIN");
-    String btnLabel;
 %>
 <html>
 <head>
@@ -13,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <style>
-        form { margin: 0 !important; padding: 0 !important; }
+        #cssForm form { margin: 0 !important; padding: 0 !important; }
     </style>
 </head>
 <body>
@@ -25,14 +24,13 @@
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="btn btn-link float-center text-light" href="books">Livres</a>
+                <a class="btn btn-link float-center text-light" href="showBooks">Livres</a>
             </li>
         </ul>
-        <div class="nav navbar-nav flex-row float-right flex-nowrap">
-
-            <form name="frm" method="get" action=<%="authenticate"%>>
-                <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals("/WEB-INF/authentication_error_page.jsp")) { %>
-                     <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
+        <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">
+            <form id=cssForm name="frm" method="get" action=<%="authenticate"%>>
+                <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals(request.getContextPath() + "/WEB-INF/error-pages/authentication_error.jsp")) { %>
+                    <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
                         <button class="btn btn-danger navbar-btn visible" name="cbtn" value="deconnexion">D&eacute;connexion</button>
