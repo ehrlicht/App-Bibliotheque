@@ -38,7 +38,7 @@
                 <td>
                     <% if (isAuthenticated) { %>
                         <form class="form-horizontal" action="removeBook" method="post">
-                            <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer</button>
+                            <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer <%=book.getId()%></button>
                         </form>
                     <% } else { %>
                         <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>

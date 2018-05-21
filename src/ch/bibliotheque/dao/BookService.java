@@ -22,12 +22,13 @@ public class BookService {
         em.persist(book);
     }
 
+    @Transactional
     public void remove(int id) {
         Book book = em.find(Book.class, id);
         em.remove(book);
     }
 
-    public List<Book> readAll() {
+    public List<Book> listAll() {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Book> cq = cb.createQuery(Book.class);
         cq.from(Book.class);

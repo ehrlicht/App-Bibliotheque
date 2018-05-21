@@ -20,7 +20,7 @@ public class DataInitializer implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        if (bs.readAll().isEmpty()) {
+        if (bs.listAll().isEmpty()) {
             bs.save(new Book("La Bible", "Dieu", "Bigbang Publications.", new Date()));
             bs.save(new Book("Les aventures de Tata au pays du zeub noir", "Hergé", "Editions la Jacquette", new Date()));
             bs.save(new Book("Les aventures de Tata - On a marché sur ma lune", "Hergé", "Editions la Jacquette", new Date()));

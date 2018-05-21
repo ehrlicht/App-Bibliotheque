@@ -1,5 +1,6 @@
 package ch.bibliotheque.servlet;
 import ch.bibliotheque.dao.BookService;
+import ch.bibliotheque.exceptions.MissingFieldsException;
 import ch.bibliotheque.model.Book;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -23,12 +24,16 @@ public class AddBookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/new_book.jsp").include(req, resp);
+        if (req.isUserInRole("ADMIN")) {
+            req.getRequestDispatcher("/WEB-INF/add_book.jsp").include(req, resp);
+        } else {
+            req.getRequestDispatcher("/WEB-INF/authentication_page.jsp").include(req, resp);
+        }
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
         String titre = req.getParameter("titre_input");
         String auteur = req.getParameter("auteur_input");
         String editeur = req.getParameter("editeur_input");
@@ -42,6 +47,8 @@ public class AddBookServlet extends HttpServlet {
             }
             bs.save(new Book(titre, auteur, editeur, pd));
             resp.sendRedirect(req.getContextPath() + "/books");
+        } else {
+            throw  new MissingFieldsException();
         }
 
     }

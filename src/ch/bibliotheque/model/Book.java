@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Book implements Serializable {
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Book implements Serializable {
         this.publicationDate = publicationDate;
     }
 
-    protected Book() {
+    public Book() {
     }
 
     public long getId() {

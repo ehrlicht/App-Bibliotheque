@@ -22,13 +22,13 @@
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="btn btn-link float-right text-light" href="/books">Livres</a>
+                <a class="btn btn-link float-center text-light" href="books">Livres</a>
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap">
 
-            <form name="frm" method="get" action=<%="/auth"%>>
-                <% if (request.getRequestURI().equals("/auth") || request.getRequestURI().equals("/WEB-INF/authentication_error_page.jsp")) { %>
+            <form name="frm" method="get" action=<%="authenticate"%>>
+                <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals("/WEB-INF/authentication_error_page.jsp")) { %>
                      <button class="btn btn-danger navbar-btn invisible" >Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
