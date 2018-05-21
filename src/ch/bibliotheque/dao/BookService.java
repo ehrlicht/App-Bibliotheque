@@ -1,6 +1,6 @@
 package ch.bibliotheque.dao;
 
-import ch.bibliotheque.metier.Book;
+import ch.bibliotheque.model.Book;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Stateless
@@ -16,8 +17,14 @@ public class BookService {
     @PersistenceContext
     private EntityManager em;
 
+    @Transactional
     public void save(Book book) {
         em.persist(book);
+    }
+
+    public void remove(int id) {
+        Book book = em.find(Book.class, id);
+        em.remove(book);
     }
 
     public List<Book> readAll() {

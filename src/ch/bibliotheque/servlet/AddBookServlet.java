@@ -1,6 +1,6 @@
 package ch.bibliotheque.servlet;
 import ch.bibliotheque.dao.BookService;
-import ch.bibliotheque.metier.Book;
+import ch.bibliotheque.model.Book;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,12 +12,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class NewBookServlet extends HttpServlet {
+public class AddBookServlet extends HttpServlet {
 
     private final BookService bs;
 
     @Inject
-    public NewBookServlet (BookService bs) {
+    public AddBookServlet (BookService bs) {
         this.bs = bs;
     }
 

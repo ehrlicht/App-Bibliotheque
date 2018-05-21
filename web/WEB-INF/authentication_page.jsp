@@ -15,7 +15,7 @@
 <body>
 <%@include file="menu.jsp" %>
 <div class="container">
-    <form id="form_auth" class="form-horizontal" action="/auth" method="post">
+    <form class="form-horizontal" action="auth" method="post">
         <div class="row justify-content-center">
             <div class="col-xl-6 col-12 text-center">
                 <h2 id="title">Connexion</h2>
@@ -27,8 +27,7 @@
                 <div class="form-group has-danger">
                     <label class="sr-only">Identifiant</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="username" placeholder="Entrer identifiant"
-                               name="user" required autofocus>
+                        <input type="text" class="form-control" id="username" placeholder="Entrer identifiant" name="user" required autofocus>
                     </div>
                 </div>
             </div>
@@ -38,8 +37,7 @@
                 <div class="form-group">
                     <label class="sr-only">Mot de passe</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" name="pwd" placeholder="Entrer mot de passe"
-                               required>
+                        <input type="password" class="form-control" name="pwd" placeholder="Entrer mot de passe" required>
                     </div>
                 </div>
             </div>

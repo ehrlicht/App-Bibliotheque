@@ -1,4 +1,4 @@
-<%@ page import="ch.bibliotheque.metier.Book" %>
+<%@ page import="ch.bibliotheque.model.Book" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Artrit
@@ -35,13 +35,13 @@
                 <td><%= book.getAuthor()%></td>
                 <td><%= book.getPublisher()%></td>
                 <td><%= book.getPublicationDate()%></td>
-
-
                 <td>
                     <% if (isAuthenticated) { %>
-                    <button type="button" class="btn btn-outline-danger visible">Supprimer</button>
+                        <form class="form-horizontal" action="removeBook" method="post">
+                            <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer</button>
+                        </form>
                     <% } else { %>
-                    <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>
+                        <button type="button" class="btn btn-outline-danger invisible">Supprimer</button>
                     <% } %>
                 </td>
             </tr>
@@ -52,7 +52,7 @@
     </div>
     <div class="text-right">
         <% if (isAuthenticated) { %>
-        <a href="<%= request.getContextPath()+"/newBook"%>" class="btn btn-info" role="button">Nouveau livre</a>
+            <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Nouveau livre</a>
         <% } %>
     </div>
 </div>
