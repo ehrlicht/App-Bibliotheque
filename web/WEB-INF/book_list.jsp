@@ -14,19 +14,16 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <style type="text/css">
         <%@ include file="/styles/authentication_style.css" %>
-        table tr td:last-child {
-            border :none;
-            background-color: #ffffff;
-        }
-        table tr th:last-child {
-            border :none;
-            background-color: #ffffff;
-        }
         table {
             border-collapse: separate;
             border-spacing: 1em;
         }
         form { margin: 0 !important; padding: 0 !important; }
+        #cssTable td
+        {vertical-align:middle;}
+        table td input {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -40,15 +37,16 @@
     </div>
     <div class="table-responsive">
         <% List<Book> books = (List) request.getAttribute("books");%>
-        <table class="table table-bordered table-sm">
+        <table id="cssTable" class="table table-bordered table-sm">
             <thead>
             <tr>
                 <th>Titre</th>
                 <th>Auteur(s)</th>
                 <th>Editeur</th>
                 <th>Année</th>
-                <th></th>
-            </tr>
+                    <% if (isAuthenticated) { %>
+                        <th></th>
+                    <% }%>
             </thead>
             <tbody>
             <% for (Book book : books){ %>
@@ -58,7 +56,7 @@
                     <td><input type="text" value="<%= book.getAuthor()%>"/></td>
                     <td><input type="text" value="<%= book.getPublisher()%>"/></td>
                     <td><input type="text" value="<%= book.getPublicationDate()%>"/></td>
-                    <td>
+                    <td align="center" >
                     <form class="form-horizontal" action="removeBook" method="post">
                         <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer</button>
                     </form>
@@ -68,7 +66,6 @@
                     <td><%= book.getAuthor()%></td>
                     <td><%= book.getPublisher()%></td>
                     <td><%= book.getPublicationDate()%></td>
-                    <td></td>
                 <% }%>
             </tr>
             <% }%>
