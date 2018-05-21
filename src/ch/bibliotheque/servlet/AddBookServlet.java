@@ -34,19 +34,19 @@ public class AddBookServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-        String titre = req.getParameter("titre_input");
-        String auteur = req.getParameter("auteur_input");
-        String editeur = req.getParameter("editeur_input");
-        String annee_input = req.getParameter("annee_input");
+        String title = req.getParameter("title");
+        String author = req.getParameter("author");
+        String publisher = req.getParameter("publisher");
+        String year = req.getParameter("year");
         Date pd =  new Date();
-        if (!titre.isEmpty() && !auteur.isEmpty() && !editeur.isEmpty() && !annee_input.isEmpty()) {
+        if (!title.isEmpty() && !author.isEmpty() && !publisher.isEmpty() && !year.isEmpty()) {
             try {
-                pd = sdf.parse(annee_input);
+                pd = sdf.parse(year);
             } catch (ParseException e) {
                 e.printStackTrace();
             }
-            bs.save(new Book(titre, auteur, editeur, pd));
-            resp.sendRedirect(req.getContextPath() + "/books");
+            bs.save(new Book(title, author, publisher, pd));
+            resp.sendRedirect(req.getContextPath() + "/showBooks");
         } else {
             throw  new MissingFieldsException();
         }
