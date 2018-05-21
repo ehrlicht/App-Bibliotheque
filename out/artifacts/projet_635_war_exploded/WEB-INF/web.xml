@@ -37,12 +37,30 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>newBookServlet</servlet-name>
-        <servlet-class>ch.bibliotheque.servlet.NewBookServlet</servlet-class>
+        <servlet-name>addBookServlet</servlet-name>
+        <servlet-class>ch.bibliotheque.servlet.AddBookServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>newBookServlet</servlet-name>
-        <url-pattern>/newBook</url-pattern>
+        <servlet-name>addBookServlet</servlet-name>
+        <url-pattern>/addBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removeBookServlet</servlet-name>
+        <servlet-class>ch.bibliotheque.servlet.RemoveBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeBookServlet</servlet-name>
+        <url-pattern>/removeBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bookListServlet</servlet-name>
+        <servlet-class>ch.bibliotheque.servlet.BookListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookListServlet</servlet-name>
+        <url-pattern>/showBooks</url-pattern>
     </servlet-mapping>
 
     <!-- ERROR HANDLING -->
