@@ -21,7 +21,7 @@
             <hr>
         </div>
     </div>
-    <form class="form-horizontal" action="auth" method="post">
+    <form class="form-horizontal" action="authenticate" method="post">
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-danger">
@@ -44,8 +44,7 @@
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
-                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i> Login
-                </button>
+                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i>Se connecter</button>
             </div>
         </div>
     </form>

@@ -10,24 +10,22 @@
 <html>
 <head>
 
-    <title>Connexion</title>
+    <title>Ajouter un livre</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
           integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
     <style type="text/css">
-
+        <%@ include file="/styles/authentication_style.css" %>
     </style>
-
-    <title>Nouveau Livre</title>
 </head>
 <body>
 <%@include file="../menu.jsp" %>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-12 text-center">
-            <h2 id="title">Ajouter un nouveau livre</h2>
+            <h2 id="title">Ajouter un livre</h2>
             <hr>
         </div>
     </div>
@@ -65,7 +63,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
-                <label>Année</label>
+                <label>Ann&eacute;e</label>
                     <div class="input-group">
                         <input type="numeric" class="form-control" name="annee_input" id="annee_input" maxlength="4" min="-3500" max="9999" placeholder="1877">
                     </div>
@@ -89,11 +87,10 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong>Un ou plusieurs champs présentent des erreurs. Veuillez SVP les corriger puis ressayer.</strong>
 
+            </div>
         </div>
     </div>
-    </div>
 </div>
-
 
 </body>
 </html>

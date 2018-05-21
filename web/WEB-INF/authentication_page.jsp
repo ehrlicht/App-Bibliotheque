@@ -27,7 +27,7 @@
                 <div class="form-group has-danger">
                     <label>Identifiant</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="username" placeholder="Entrer identifiant" name="user" required autofocus>
+                        <input type="text" class="form-control" name="user" placeholder="Entrer l'identifiant" required autofocus>
                     </div>
                 </div>
             </div>
@@ -37,15 +37,14 @@
                 <div class="form-group">
                     <label>Mot de passe</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" name="pwd" placeholder="Entrer mot de passe" required>
+                        <input type="password" class="form-control" name="pwd" placeholder="Entrer le mot de passe" required>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
-                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i> Login
-                </button>
+                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i>Se connecter</button>
             </div>
         </div>
     </form>
