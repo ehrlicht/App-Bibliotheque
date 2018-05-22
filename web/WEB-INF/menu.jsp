@@ -33,9 +33,9 @@
                 <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
-                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="deconnexion">D&eacute;connexion</button>
+                        <button class="btn btn-danger navbar-btn visible">D&eacute;connexion</button>
                     <% } else { %>
-                        <button class="btn btn-danger navbar-btn visible" name="cbtn" value="connexion">Connexion</button>
+                        <button class="btn btn-danger navbar-btn visible">Connexion</button>
                     <% } %>
                 <% } %>
             </form>

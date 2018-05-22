@@ -28,6 +28,7 @@
 </head>
 <body>
 <%@include file="menu.jsp" %>
+<div class="container-fluid">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-12 text-center">
@@ -78,6 +79,8 @@
             <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
         <% } %>
     </div>
+</div>
+<hr>
 </div>
 </body>
 </html>

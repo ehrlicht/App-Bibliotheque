@@ -7,7 +7,7 @@
 <body>
 <%@include file="/WEB-INF/menu.jsp" %>
 <div class="container-fluid">
-    <div class="p-3 mb-2 text-dark, rounded" style="background-color:lightblue">
+    <div class="p-3 mb-2 text-dark">
         <div class="row">
             <div class="col-md">
                 <span>
@@ -21,6 +21,7 @@
                      src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Long_Room_Interior%2C_Trinity_College_Dublin%2C_Ireland_-_Diliff.jpg"
                      style="width:450px" class="rounded"></div>
         </div>
+        <hr>
     </div>
 </div>
 </body>
