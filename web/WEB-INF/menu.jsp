@@ -29,9 +29,7 @@
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">
             <form id=cssForm name="frm" method="get" action=<%="authenticate"%>>
-                <%System.out.println("WORKING0");%>
                 <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals(request.getContextPath() + "/WEB-INF/error-pages/authentication_error.jsp")) { %>
-                <%System.out.println("WORKING1");%>
                 <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>
                     <% if (isAuthenticated) { %>
