@@ -9,7 +9,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-
     <title>Ajouter un livre</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -62,7 +61,10 @@
                 <div class="form-group has-feedback">
                     <label>Editeur</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="publisher" placeholder="Rousky vestnik">
+                        <input type="text" class="form-control" name="publisher" aria-describedby="publisherHelp" placeholder="Rousky vestnik">
+                    </div>
+                    <div>
+                        <small id="publisherHelp" class="form-text text-muted">Si aucun, inscrire <b>neant</b></small>
                     </div>
                 </div>
             </div>
