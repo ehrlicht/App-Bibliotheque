@@ -22,6 +22,13 @@
 </head>
 <body>
 <%@include file="menu.jsp" %>
+<div >
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Home</a></li>
+        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/books" %>">Livres</a></li>
+        <li class="breadcrumb-item active">Nouveau Livre</li>
+    </ol>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-12 text-center">
