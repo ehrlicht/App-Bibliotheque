@@ -12,6 +12,7 @@
     <title>Liste des livres</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <style type="text/css">
         <%@ include file="/styles/authentication_style.css" %>
         table {
@@ -46,7 +47,7 @@
                 <th class="text-left">Editeur</th>
                 <th class="text-center">Année</th>
                     <% if (isAuthenticated) { %>
-                        <th></th>
+                        <th class="text-center">Supprimer</th>
                     <% }%>
             </thead>
             <tbody>
@@ -59,7 +60,7 @@
                     <td style="width: 7.5%"><input type="text" value="<%= book.getYear().getValue()%>"/></td>
                     <td style="width: 12.5%" align="center" >
                     <form class="form-horizontal" action="removeBook" method="post">
-                        <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>">Supprimer</button>
+                        <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-trash-alt"></i></button>
                     </form>
                     </td>
                 <% } else { %>
