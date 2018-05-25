@@ -44,6 +44,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control" name="title" placeholder="Anna Kar&eacute;nine">
                     </div>
+                    <div style="color: #FF0000;">${errorTitle}</div>
                 </div>
             </div>
         </div>
@@ -90,7 +91,9 @@
                 </div>
             </div>
         </div>
-        <div style="color: #FF0000;">${errorMessage}</div>
+        <% if((Boolean)request.getAttribute("errorMessage")){ %>
+        <%@include file="error-pages/add_book_error.jsp"%>
+        <%}%>
     </form>
 </div>
 
