@@ -1,6 +1,5 @@
 package ch.bibliotheque.servlet;
 import ch.bibliotheque.dao.BookService;
-import ch.bibliotheque.trash.exceptions.MissingFieldsException;
 import ch.bibliotheque.model.Book;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
