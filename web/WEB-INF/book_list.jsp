@@ -46,9 +46,10 @@
                 <th class="text-left">Auteur(s)</th>
                 <th class="text-left">Editeur</th>
                 <th class="text-center">Année</th>
-                    <% if (isAuthenticated) { %>
-                        <th class="text-center">Supprimer</th>
-                    <% }%>
+                <% if (isAuthenticated) { %>
+                    <th class="text-center">Modifier</th>
+                    <th class="text-center">Supprimer</th>
+                <% }%>
             </thead>
             <tbody>
             <% for (Book book : books){ %>
@@ -60,6 +61,9 @@
                     <td style="width: 7.5%"><input type="text" maxlength="4" value="<%= book.getFormattedYear()%>"/></td>
                     <td style="width: 12.5%" align="center" >
                     <form class="form-horizontal" action="removeBook" method="post">
+                        <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
+                    </form>
+                     <form class="form-horizontal" action="removeBook" method="post">
                         <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-trash-alt"></i></button>
                     </form>
                     </td>
@@ -71,7 +75,6 @@
                 <% }%>
             </tr>
             <% }%>
-
             </tbody>
         </table>
     </div>
