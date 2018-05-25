@@ -10,13 +10,15 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("POST");
         String user = req.getParameter("user");
         String pwd = req.getParameter("pwd");
+        System.out.println(user+" "+pwd);
         try {
             req.login(user, pwd);
-            resp.sendRedirect("/main");
+            System.out.println("AUTHENTICATED");
+            resp.sendRedirect("main");
         } catch (ServletException se) {
+            System.out.println("LOGIN ERROR");
             req.setAttribute("loginError", true);
             req.getRequestDispatcher(req.getContextPath() + "/WEB-INF/authentication.jsp").forward(req, resp);
         }
@@ -24,13 +26,14 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("GET");
         if (!req.isUserInRole("ADMIN")) {
+            System.out.println("USER IS NOT IN ROLE");
             req.setAttribute("loginError", false);
             req.getRequestDispatcher("/WEB-INF/authentication.jsp").forward(req, resp);
         } else {
+            System.out.println("LOGOUT");
             req.logout();
-            resp.sendRedirect("/main");
+            resp.sendRedirect("main");
         }
     }
 }
