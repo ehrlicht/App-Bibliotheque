@@ -28,7 +28,7 @@
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">
-            <form id=cssForm name="frm" method="get" action=<%="authenticate"%>>
+            <form id="cssForm" name="frm" method="get" action=<%="authenticate"%>>
                 <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals(request.getContextPath() + "/WEB-INF/error-pages/authentication_error.jsp")) { %>
                 <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>
