@@ -33,27 +33,35 @@ public class Book {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void setTitle(String title) { this.title = title; }
 
     public String getPublisher() {
+        if (publisher.equals("neant".toUpperCase()) || publisher.isEmpty()) {
+            return "-";
+        }
         return publisher;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
-    }
+    public void setPublisher(String publisher) { this.publisher = publisher; }
 
     public String getAuthor() {
+        if (author.equals("neant".toUpperCase()) || publisher.isEmpty()) {
+            return "Inconnu";
+        }
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+    public void setAuthor(String author) { this.author = author; }
 
     public Year getYear() { return year; }
+
+    public String getFormattedYear() {
+        if (year.getValue() >= 0) {
+            return year.toString();
+        } else  {
+            return Math.abs(year.getValue()) + " avant J.C.";
+        }
+    }
 
     public void setYear(Year year) { this.year = year; }
 }

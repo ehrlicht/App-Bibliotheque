@@ -57,7 +57,7 @@
                 <td><input type="text" value="<%= book.getTitle()%>"/></td>
                     <td style="width: 17.5%"><input type="text" value="<%= book.getAuthor()%>"/></td>
                     <td style="width: 17.5%"><input type="text" value="<%= book.getPublisher()%>"/></td>
-                    <td style="width: 7.5%"><input type="text" value="<%= book.getYear().getValue()%>"/></td>
+                    <td style="width: 7.5%"><input type="text" maxlength="4" value="<%= book.getFormattedYear()%>"/></td>
                     <td style="width: 12.5%" align="center" >
                     <form class="form-horizontal" action="removeBook" method="post">
                         <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-trash-alt"></i></button>
@@ -67,7 +67,7 @@
                     <td><%= book.getTitle()%></td>
                     <td><%= book.getAuthor()%></td>
                     <td><%= book.getPublisher()%></td>
-                    <td class="text-center"><%= book.getYear().getValue()%></td>
+                    <td class="text-center"><%= book.getFormattedYear()%></td>
                 <% }%>
             </tr>
             <% }%>
