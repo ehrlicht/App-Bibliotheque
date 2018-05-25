@@ -9,6 +9,7 @@ import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
+import java.time.Year;
 import java.util.List;
 
 @Stateless
@@ -26,6 +27,9 @@ public class BookService {
     public void remove(int id) {
         Book book = em.find(Book.class, id);
         em.remove(book);
+    }
+    public void updateBook(Book book){
+        em.merge(book);
     }
 
     public List<Book> listAll() {
