@@ -54,13 +54,16 @@
         <servlet-name>bookListServlet</servlet-name>
         <url-pattern>/showBooks</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>updateBookList</servlet-name>
+        <servlet-class>ch.bibliotheque.servlet.UpdateBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateBookList</servlet-name>
+        <url-pattern>/updateBook</url-pattern>
+    </servlet-mapping>
 
     <!-- ERROR HANDLING -->
-
-    <error-page>
-        <exception-type>ch.bibliotheque.trash.exceptions.MissingFieldsException</exception-type>
-        <location>/WEB-INF/error-pages/add_book_error.jsp</location>
-    </error-page>
 
     <error-page>
         <error-code>404</error-code>
