@@ -36,6 +36,7 @@
         </div>
     </div>
     <form id="form_newBook" class="form-horizontal" method="post" action="addBook">
+
         <div class="row justify-content-center align-items-left">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
@@ -89,6 +90,7 @@
                 </div>
             </div>
         </div>
+        <div style="color: #FF0000;">${errorMessage}</div>
     </form>
 </div>
 

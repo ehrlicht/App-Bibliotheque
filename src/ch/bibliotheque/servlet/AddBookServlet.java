@@ -42,7 +42,9 @@ public class AddBookServlet extends HttpServlet {
             bs.save(new Book(title, author, publisher, Year.of(Integer.parseInt(year))));
             resp.sendRedirect(req.getContextPath() + "/showBooks");
         } else {
-            throw  new MissingFieldsException();
+            req.setAttribute("errorMessage","Un ou plusieurs champs présentent des erreurs. Veuillez SVP les corriger puis ressayer.");
+            req.getRequestDispatcher(req.getContextPath() +"/WEB-INF/add_book.jsp").forward(req,resp);
+
         }
     }
 }
