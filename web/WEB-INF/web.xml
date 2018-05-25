@@ -58,12 +58,7 @@
     <!-- ERROR HANDLING -->
 
     <error-page>
-        <exception-type>ch.bibliotheque.exceptions.LoginErrorException</exception-type>
-        <location>/WEB-INF/error-pages/authentication_error.jsp</location>
-    </error-page>
-
-    <error-page>
-        <exception-type>ch.bibliotheque.exceptions.MissingFieldsException</exception-type>
+        <exception-type>ch.bibliotheque.trash.exceptions.MissingFieldsException</exception-type>
         <location>/WEB-INF/error-pages/add_book_error.jsp</location>
     </error-page>
 

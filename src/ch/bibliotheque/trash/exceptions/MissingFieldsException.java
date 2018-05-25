@@ -1,4 +1,4 @@
-package ch.bibliotheque.exceptions;
+package ch.bibliotheque.trash.exceptions;
 
 public class MissingFieldsException extends RuntimeException {
     public MissingFieldsException() { super(); }

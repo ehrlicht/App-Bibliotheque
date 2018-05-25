@@ -28,11 +28,11 @@
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">
-            <form id="cssForm" name="frm" method="get" action=<%="authenticate"%>>
-                <% if (request.getRequestURI().equals("/authenticate") || request.getRequestURI().equals(request.getContextPath() + "/WEB-INF/error-pages/authentication_error.jsp")) { %>
-                <button class="btn btn-danger navbar-btn invisible">Connexion</button>
+            <form id="cssForm" method="get" action=<%="authenticate"%>>
+                <% if (request.getRequestURI().equals("/WEB-INF/authentication.jsp")) { %>
+                    <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>
-                    <% if (isAuthenticated) { %>
+                <% if (isAuthenticated) { %>
                         <button class="btn btn-danger navbar-btn visible">D&eacute;connexion</button>
                     <% } else { %>
                         <button class="btn btn-danger navbar-btn visible">Connexion</button>

@@ -48,6 +48,9 @@
             </div>
         </div>
     </form>
+    <% if ((Boolean)request.getAttribute("loginError")) { %>
+        <%@include file="error-pages/authentication_error.jsp" %>
+    <% } %>
 </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 package ch.bibliotheque.servlet;
 import ch.bibliotheque.dao.BookService;
-import ch.bibliotheque.exceptions.MissingFieldsException;
+import ch.bibliotheque.trash.exceptions.MissingFieldsException;
 import ch.bibliotheque.model.Book;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -8,10 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.Year;
-import java.util.Date;
 
 
 public class AddBookServlet extends HttpServlet {
