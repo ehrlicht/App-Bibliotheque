@@ -37,7 +37,7 @@ public class Book {
 
     public String getPublisher() {
         if (publisher.equals("neant".toUpperCase()) || publisher.isEmpty()) {
-            return "-";
+                return "-";
         }
         return publisher;
     }
@@ -45,7 +45,7 @@ public class Book {
     public void setPublisher(String publisher) { this.publisher = publisher; }
 
     public String getAuthor() {
-        if (author.equals("neant".toUpperCase()) || publisher.isEmpty()) {
+        if (author.equals("neant".toUpperCase()) || author.isEmpty()) {
             return "Inconnu";
         }
         return author;

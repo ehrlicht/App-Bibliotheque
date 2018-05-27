@@ -35,7 +35,7 @@ public class AddBookServlet extends HttpServlet {
         String author = req.getParameter("author");
         String publisher = req.getParameter("publisher");
         String year = req.getParameter("year");
-        if (!title.isEmpty() && !author.isEmpty() && !publisher.isEmpty() && !year.isEmpty()) {
+        if (!title.isEmpty() && !year.isEmpty()) {
             bs.save(new Book(title, author, publisher, Year.of(Integer.parseInt(year))));
             resp.sendRedirect(req.getContextPath() + "/showBooks");
         } else {
