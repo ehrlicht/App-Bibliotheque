@@ -16,7 +16,7 @@
           integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
     <style type="text/css">
-        <%@ include file="/styles/authentication_style.css" %>
+        <%@include file="/styles/authentication_style.css" %>
     </style>
 </head>
 <body>
@@ -40,7 +40,7 @@
         <div class="row justify-content-center align-items-left">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
-                    <label>Titre</label>
+                    <label>Titre*</label>
                     <div class="input-group">
                         <input type="text" class="form-control" name="title" placeholder="Anna Kar&eacute;nine">
                     </div>
@@ -63,10 +63,7 @@
                 <div class="form-group has-feedback">
                     <label>Editeur</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="publisher" aria-describedby="publisherHelp" placeholder="Rousky vestnik">
-                    </div>
-                    <div>
-                        <small id="publisherHelp" class="form-text text-muted">Si aucun, inscrire <b>neant</b></small>
+                        <input type="text" class="form-control" name="publisher" placeholder="Rousky vestnik">
                     </div>
                 </div>
             </div>
@@ -74,9 +71,12 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-6 col-12">
                 <div class="form-group has-feedback">
-                    <label>Ann&eacute;e</label>
+                    <label>Ann&eacute;e*</label>
                     <div class="input-group">
-                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877">
+                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877" aria-describedby="notice">
+                    </div>
+                    <div>
+                        <small id="notice" class="form-text text-muted"><b>Les champs marqu&eacute;s d'un * sont requis.</b></small>
                     </div>
                 </div>
             </div>
@@ -91,12 +91,18 @@
                 </div>
             </div>
         </div>
+        <%System.out.println("Error message = "+request.getAttribute("errorMessage"));%>
+        <%System.out.println("Confirm message = "+request.getAttribute("confirmMessage"));%>
         <% if((Boolean)request.getAttribute("errorMessage")){ %>
         <%@include file="error-pages/add_book_error.jsp"%>
         <%}%>
+        <% if((Boolean)request.getAttribute("confirmMessage")){ %>
+        <%@include file="confirmation_modal.jsp"%>
+        <script>
+            $("#myModal").modal()
+        </script>
+        <%}%>
     </form>
 </div>
-
-
 </body>
 </html>

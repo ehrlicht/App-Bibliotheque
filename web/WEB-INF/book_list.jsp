@@ -7,6 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%session.setAttribute("bookadded", false);%>
 <html>
 <head>
     <title>Liste des livres</title>
@@ -14,7 +15,7 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <style type="text/css">
-        <%@ include file="/styles/authentication_style.css" %>
+        <%@include file="/styles/authentication_style.css" %>
         table {
             border-collapse: separate;
             border-spacing: 1em;
@@ -83,6 +84,15 @@
     <div class="text-right">
         <% if (isAuthenticated) { %>
             <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
+        <% } %>
+        <%System.out.println((boolean)session.getAttribute("bookadded"));%>
+        <% if ((Boolean)session.getAttribute("bookadded")) { %>
+        <%@ include file="/WEB-INF/confirmation_modal.jsp" %>
+        <script>
+            $(document).ready( function() {
+                $("#myModal").modal();
+            });
+        </script>
         <% } %>
     </div>
 </div>
