@@ -26,4 +26,9 @@ public class BookListServlet extends HttpServlet {
         req.setAttribute("books", books);
         req.getRequestDispatcher(req.getContextPath() + "/WEB-INF/book_list.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("doPost BookListServlet");
+    }
 }

@@ -56,7 +56,7 @@
             <% for (Book book : books){ %>
             <tr>
                 <% if (isAuthenticated) { %>
-                    <form class="form-horizontal" action="updateBook" method="post">
+                    <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
                         <td><input name="title" type="text" value="<%= book.getTitle()%>"/></td>
                         <td style="width: 17.5%"><input name="author" type="text" value="<%= book.getAuthor()%>"/></td>
                         <td style="width: 17.5%"><input name="publisher" type="text" value="<%= book.getPublisher()%>"/></td>
@@ -82,9 +82,10 @@
         </table>
     </div>
     <div class="text-right">
-        <% if (isAuthenticated) { %>
-            <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
+        < <% if (isAuthenticated) { %>
+        <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
         <% } %>
+
         <%System.out.println((boolean)session.getAttribute("bookadded"));%>
         <% if ((Boolean)session.getAttribute("bookadded")) { %>
         <%@ include file="/WEB-INF/confirmation_modal.jsp" %>
@@ -95,7 +96,7 @@
         </script>
         <% } %>
 
-       <!-- <% System.out.println(request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")); %>
+        <% System.out.println(request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")); %>
         <%System.out.println(request.getHeader("referer"));%>
         <%System.out.println("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook");%>
         <% if (request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")) { %>
@@ -106,7 +107,6 @@
             });
         </script>
         <% } %>
-           -->
     </div>
 </div>
 <hr>

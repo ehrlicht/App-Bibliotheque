@@ -22,9 +22,11 @@ public class UpdateBookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("isUpdated" , false);
+        System.out.println("doGet UpdateServlet");
         if (req.isUserInRole("ADMIN")) {
-            req.setAttribute("errorMessageUpdate",false);
+            //req.setAttribute("errorMessageUpdate",false);
+            req.setAttribute("isUpdated" , false);
+            req.setAttribute("moi" , "HELLOOOO");
             req.getRequestDispatcher("/WEB-INF/book_list.jsp").include(req, resp);
         } else {
             req.getRequestDispatcher("/WEB-INF/authentication.jsp").include(req, resp);
@@ -41,7 +43,7 @@ public class UpdateBookServlet extends HttpServlet {
         String id = req.getParameter("id");
         bs.updateBook(title,author,publisher,Year.of(Integer.parseInt(year)),Integer.parseInt(id));
         req.setAttribute("isUpdated",true);
-        resp.sendRedirect(req.getContextPath()+"/showBooks");
+        resp.sendRedirect(req.getContextPath()+"/showBooks?updated=true");
 
     }
 }
