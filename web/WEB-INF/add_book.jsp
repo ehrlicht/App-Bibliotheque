@@ -73,7 +73,7 @@
                 <div class="form-group has-feedback">
                     <label>Ann&eacute;e*</label>
                     <div class="input-group">
-                        <input type="numeric" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877" aria-describedby="notice">
+                        <input type="number" class="form-control" name="year" maxlength="4" min="-999" max="9999" placeholder="1877" aria-describedby="notice">
                     </div>
                     <div>
                         <small id="notice" class="form-text text-muted"><b>Les champs marqu&eacute;s d'un * sont requis.</b></small>
