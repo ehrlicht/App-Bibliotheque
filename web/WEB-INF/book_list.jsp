@@ -56,13 +56,13 @@
             <% for (Book book : books){ %>
             <tr>
                 <% if (isAuthenticated) { %>
-                <td><input type="text" value="<%= book.getTitle()%>"/></td>
-                    <td style="width: 17.5%"><input type="text" value="<%= book.getAuthor()%>"/></td>
-                    <td style="width: 17.5%"><input type="text" value="<%= book.getPublisher()%>"/></td>
-                    <td style="width: 12.5%"><input type="text" maxlength="4" value="<%= book.getFormattedYear()%>"/></td>
+                <form class="form-horizontal" action="updateBook" method="post">
+                    <td><input name="title" type="text" value="<%= book.getTitle()%>"/></td>
+                    <td style="width: 17.5%"><input type="text" name="author" value="<%= book.getAuthor()%>"/></td>
+                    <td style="width: 17.5%"><input type="text" name="publisher" value="<%= book.getPublisher()%>"/></td>
+                    <td style="width: 12.5%"><input type="number" maxlength="4" name="year" value="<%= book.getFormattedYear()%>"/></td>
                     <td style="width: 10.5%" align="center" >
-                    <form class="form-horizontal" action="updateBook" method="post">
-                        <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
+                        <button type="submit" class="btn btn-outline-danger visible" name="id value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
                     </form>
                     </td>
                     <td style="width: 10.5%" align="center" >

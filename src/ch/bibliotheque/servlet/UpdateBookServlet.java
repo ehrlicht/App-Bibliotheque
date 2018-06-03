@@ -32,11 +32,13 @@ public class UpdateBookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("doPost UpdateServlet");
         String title = req.getParameter("title");
         String author = req.getParameter("author");
         String publisher = req.getParameter("publisher");
         String year = req.getParameter("year");
         bs.updateBook(new Book(title, author,publisher, Year.of(Integer.parseInt(year))));
-        req.getRequestDispatcher("/WEB-INF/book_list.jsp").include(req, resp);
+        resp.sendRedirect(req.getContextPath()+"/showBooks");
+
     }
 }
