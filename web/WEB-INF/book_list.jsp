@@ -56,12 +56,12 @@
             <% for (Book book : books){ %>
             <tr>
                 <% if (isAuthenticated) { %>
-                <td><input type="text" value="<%= book.getTitle()%>"/></td>
-                    <td style="width: 17.5%"><input type="text" value="<%= book.getAuthor()%>"/></td>
-                    <td style="width: 17.5%"><input type="text" value="<%= book.getPublisher()%>"/></td>
-                    <td style="width: 12.5%"><input type="text" maxlength="4" value="<%= book.getFormattedYear()%>"/></td>
-                    <td style="width: 10.5%" align="center" >
                     <form class="form-horizontal" action="updateBook" method="post">
+                        <td><input name="title" type="text" value="<%= book.getTitle()%>"/></td>
+                        <td style="width: 17.5%"><input name="author" type="text" value="<%= book.getAuthor()%>"/></td>
+                        <td style="width: 17.5%"><input name="publisher" type="text" value="<%= book.getPublisher()%>"/></td>
+                        <td style="width: 12.5%"><input name="year" type="number" maxlength="4" value="<%= book.getFormattedYear()%>"/></td>
+                        <td style="width: 10.5%" align="center">
                         <button type="submit" class="btn btn-outline-danger visible" name="id" value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
                     </form>
                     </td>
@@ -95,7 +95,7 @@
         </script>
         <% } %>
 
-        <% System.out.println(request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")); %>
+       <!-- <% System.out.println(request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")); %>
         <%System.out.println(request.getHeader("referer"));%>
         <%System.out.println("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook");%>
         <% if (request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")) { %>
@@ -106,7 +106,7 @@
             });
         </script>
         <% } %>
-
+           -->
     </div>
 </div>
 <hr>

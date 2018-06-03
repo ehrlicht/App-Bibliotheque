@@ -28,8 +28,13 @@ public class BookService {
         Book book = em.find(Book.class, id);
         em.remove(book);
     }
-    public void updateBook(Book book){
-        em.merge(book);
+    public void updateBook(String title,String author, String publisher, Year year, int id){
+        Book book_ = em.find(Book.class, id);
+        book_.setTitle(title);
+        book_.setAuthor(author);
+        book_.setPublisher(publisher);
+        book_.setYear(year);
+        em.merge(book_);
     }
 
     public List<Book> listAll() {

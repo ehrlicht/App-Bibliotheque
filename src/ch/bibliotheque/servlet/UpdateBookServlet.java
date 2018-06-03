@@ -22,6 +22,7 @@ public class UpdateBookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("isUpdated" , false);
         if (req.isUserInRole("ADMIN")) {
             req.setAttribute("errorMessageUpdate",false);
             req.getRequestDispatcher("/WEB-INF/book_list.jsp").include(req, resp);
@@ -37,7 +38,9 @@ public class UpdateBookServlet extends HttpServlet {
         String author = req.getParameter("author");
         String publisher = req.getParameter("publisher");
         String year = req.getParameter("year");
-        bs.updateBook(new Book(title, author,publisher, Year.of(Integer.parseInt(year))));
+        String id = req.getParameter("id");
+        bs.updateBook(title,author,publisher,Year.of(Integer.parseInt(year)),Integer.parseInt(id));
+        req.setAttribute("isUpdated",true);
         resp.sendRedirect(req.getContextPath()+"/showBooks");
 
     }
