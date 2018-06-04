@@ -24,9 +24,6 @@ public class UpdateBookServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet UpdateServlet");
         if (req.isUserInRole("ADMIN")) {
-            //req.setAttribute("errorMessageUpdate",false);
-            req.setAttribute("isUpdated" , false);
-            req.setAttribute("moi" , "HELLOOOO");
             req.getRequestDispatcher("/WEB-INF/book_list.jsp").include(req, resp);
         } else {
             req.getRequestDispatcher("/WEB-INF/authentication.jsp").include(req, resp);
@@ -35,15 +32,14 @@ public class UpdateBookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doPost UpdateServlet");
         String title = req.getParameter("title");
         String author = req.getParameter("author");
         String publisher = req.getParameter("publisher");
         String year = req.getParameter("year");
         String id = req.getParameter("id");
         bs.updateBook(title,author,publisher,Year.of(Integer.parseInt(year)),Integer.parseInt(id));
-        req.setAttribute("isUpdated",true);
-        resp.sendRedirect(req.getContextPath()+"/showBooks?updated=true");
+        req.getSession().setAttribute("bookUpdated", true);
+        resp.sendRedirect(req.getContextPath()+"/showBooks");
 
     }
 }

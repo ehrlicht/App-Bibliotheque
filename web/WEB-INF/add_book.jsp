@@ -91,16 +91,8 @@
                 </div>
             </div>
         </div>
-        <%System.out.println("Error message = "+request.getAttribute("errorMessage"));%>
-        <%System.out.println("Confirm message = "+request.getAttribute("confirmMessage"));%>
         <% if((Boolean)request.getAttribute("errorMessage")){ %>
         <%@include file="error-pages/add_book_error.jsp"%>
-        <%}%>
-        <% if((Boolean)request.getAttribute("confirmMessage")){ %>
-        <%@include file="confirmation_modal.jsp"%>
-        <script>
-            $("#myModal").modal()
-        </script>
         <%}%>
     </form>
 </div>

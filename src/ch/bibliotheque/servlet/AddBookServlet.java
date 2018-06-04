@@ -23,7 +23,6 @@ public class AddBookServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.isUserInRole("ADMIN")) {
             req.setAttribute("errorMessage",false);
-            req.setAttribute("confirmMessage",false);
             req.getRequestDispatcher("/WEB-INF/add_book.jsp").include(req, resp);
         } else {
             req.getRequestDispatcher("/WEB-INF/authentication.jsp").include(req, resp);
@@ -33,15 +32,13 @@ public class AddBookServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("errorMessage",false);
-        req.setAttribute("confirmMessage", false);
         String title = req.getParameter("title");
         String author = req.getParameter("author");
         String publisher = req.getParameter("publisher");
         String year = req.getParameter("year");
         if (!title.isEmpty() && !year.isEmpty()) {
             bs.save(new Book(title, author, publisher, Year.of(Integer.parseInt(year))));
-            req.setAttribute("confirmMessage", true);
-            //req.getRequestDispatcher(req.getContextPath() +"/WEB-INF/add_book.jsp").forward(req,resp);
+            req.getSession().setAttribute("bookAdded", true);
             resp.sendRedirect(req.getContextPath() + "/showBooks");
         } else {
             req.setAttribute("errorMessage",true);

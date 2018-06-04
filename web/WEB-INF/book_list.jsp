@@ -7,7 +7,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%session.setAttribute("bookadded", false);%>
 <html>
 <head>
     <title>Liste des livres</title>
@@ -82,31 +81,32 @@
         </table>
     </div>
     <div class="text-right">
-        < <% if (isAuthenticated) { %>
+        <% if (isAuthenticated) { %>
         <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
         <% } %>
 
-        <%System.out.println((boolean)session.getAttribute("bookadded"));%>
-        <% if ((Boolean)session.getAttribute("bookadded")) { %>
-        <%@ include file="/WEB-INF/confirmation_modal.jsp" %>
-        <script>
-            $(document).ready( function() {
-                $("#myModal").modal();
+        <% if (Boolean.TRUE.equals(session.getAttribute("bookAdded"))) { %>
+        <% System.out.println("CREATED"); %>
+        <% session.setAttribute("bookAdded", false); %>
+        <%@ include file="/WEB-INF/modals/confirmation_modal.jsp" %>
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#myModal').modal('show');
             });
         </script>
         <% } %>
 
-        <% System.out.println(request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")); %>
-        <%System.out.println(request.getHeader("referer"));%>
-        <%System.out.println("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook");%>
-        <% if (request.getHeader("referer").equals("http://"+request.getServerName()+":"+request.getLocalPort()+"/addBook")) { %>
-        <%@ include file="/WEB-INF/confirmation_modal.jsp" %>
-        <script>
-            $(document).ready( function() {
-                $("#myModal").modal();
+        <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
+        <% System.out.println("UPDATED"); %>
+        <% session.setAttribute("bookUpdated", false); %>
+        <%@ include file="/WEB-INF/modals/update_modal.jsp" %>
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#myModal').modal('show');
             });
         </script>
         <% } %>
+
     </div>
 </div>
 <hr>
