@@ -21,7 +21,6 @@ public class UpdateBookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doGet UpdateServlet");
         if (req.isUserInRole("ADMIN")) {
             req.getRequestDispatcher("/WEB-INF/book_list.jsp").include(req, resp);
         } else {

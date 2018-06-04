@@ -22,6 +22,7 @@ public class RemoveBookServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Integer id = Integer.parseInt(req.getParameter("id"));
         bs.remove(id);
+        req.getSession().setAttribute("bookDeleted", true);
         resp.sendRedirect(req.getContextPath() + "/showBooks");
     }
 }

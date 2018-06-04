@@ -1,13 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mgtub
-  Date: 5/27/2018
-  Time: 10:06 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="added">Livre ajouté</h5>
@@ -25,5 +18,5 @@
             </div>
         </div>
     </div>
-</div>Ok great
+</div>
 

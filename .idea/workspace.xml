@@ -7,17 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/dao/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/add_book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/add_book.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,20 +33,8 @@
       <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddBookServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="118" column="39" lean-forward="true" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -53,11 +42,8 @@
       <file leaf-file-name="BookListServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,44 +51,67 @@
       <file leaf-file-name="RemoveBookServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="UpdateBookServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="46" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="46" />
+            <state relative-caret-position="427">
+              <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <file leaf-file-name="500.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="935">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_book.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
+      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+            <state relative-caret-position="238">
+              <caret line="20" column="88" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java">
+      <file leaf-file-name="404.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="delete_modal.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="34">
+              <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_modal.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmation_modal.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -123,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BookServlet.java" />
         <option value="$PROJECT_DIR$/src/BookService.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/views/NewBookServlet.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/views/BookServlet.java" />
@@ -141,14 +149,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/new_book.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/metier/Book.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/NewBookServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/exceptions/LoginErrorException.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/exceptions/MissingFieldsException.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/new_book_error_page.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/authentication_error_page.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/authentication_page.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error_page.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookServlet.java" />
@@ -162,18 +166,23 @@
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/BookService.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/add_book.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/update_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/confirmation_modal.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/main.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/add_book.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
       </list>
     </option>
   </component>
@@ -223,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -283,6 +293,20 @@
             </path>
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="error-pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -290,7 +314,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,19 +326,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF" />
-      <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF\error-pages" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\src" />
-      <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\src\META-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF\modals" />
       <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF\error-pages" />
       <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\web\WEB-INF" />
       <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\web" />
       <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF\modals" />
+      <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF" />
+      <recent name="C:\Users\mgtub\IdeaProjects\projet-635\web\WEB-INF\error-pages" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,14 +519,8 @@
       <workItem from="1528105674489" duration="7616000" />
       <workItem from="1528123759043" duration="8909000" />
       <workItem from="1528142483049" duration="85000" />
-      <workItem from="1528142713723" duration="383000" />
-    </task>
-    <task id="LOCAL-00003" summary="redirect index.jsp working">
-      <created>1524873000921</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1524873000921</updated>
+      <workItem from="1528142713723" duration="1113000" />
+      <workItem from="1528146746995" duration="1048000" />
     </task>
     <task id="LOCAL-00004" summary="added different redirect paths (index.html, index, home, etc)">
       <created>1525160166159</created>
@@ -841,15 +858,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528133510357</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="- bornes placées pour l'année en mode authentifié">
+      <created>1528143211812</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1528143211812</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176552000" />
+    <option name="totallyTimeSpent" value="178330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50364584" side_tool="true" weight="0.3717001" />
@@ -874,7 +897,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Persistence" order="7" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15885417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.184375" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -954,9 +977,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1054,55 +1074,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/add_book_error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/styles/authentication_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1110,17 +1082,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="85">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="527">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1138,20 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1161,51 +1140,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="46" />
+        <state relative-caret-position="289">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java" />
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/add_book_error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="88" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java" />
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <caret line="118" column="39" lean-forward="true" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
         </state>
       </provider>
     </entry>

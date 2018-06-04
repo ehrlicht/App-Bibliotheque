@@ -1,11 +1,5 @@
 <%@ page import="ch.bibliotheque.model.Book" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: Artrit
-  Date: 26.04.2018
-  Time: 21:54
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -101,20 +95,27 @@
             <% } %>
 
             <% if (Boolean.TRUE.equals(session.getAttribute("bookAdded"))) { %>
-            <% System.out.println("CREATED"); %>
             <% session.setAttribute("bookAdded", false); %>
             <%@ include file="/WEB-INF/modals/confirmation_modal.jsp" %>
-            <script type="text/javascript">
+            <script>
                 $(window).on('load', function () {
                     $('#myModal').modal('show');
                 });
             </script>
             <% } %>
             <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
-            <% System.out.println("UPDATED"); %>
             <% session.setAttribute("bookUpdated", false); %>
             <%@ include file="/WEB-INF/modals/update_modal.jsp" %>
-            <script type="text/javascript">
+            <script>
+                $(window).on('load', function () {
+                    $('#myModal').modal('show');
+                });
+            </script>
+            <% } %>
+            <% if (Boolean.TRUE.equals(session.getAttribute("bookDeleted"))) { %>
+            <% session.setAttribute("bookDeleted", false); %>
+            <%@ include file="/WEB-INF/modals/delete_modal.jsp" %>
+            <script>
                 $(window).on('load', function () {
                     $('#myModal').modal('show');
                 });
