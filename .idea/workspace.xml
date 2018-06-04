@@ -6,12 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="- bornes placées pour l'année en mode authentifié">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet-635.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projet-635.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" afterDir="false" />
     </list>
@@ -34,11 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="-119">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#td#3;n#form#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_book.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="75" column="113" lean-forward="true" selection-start-line="75" selection-start-column="92" selection-end-line="75" selection-end-column="113" />
             </state>
           </provider>
         </entry>
@@ -52,25 +60,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="authentication.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="update_modal.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="update_modal.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="374">
+              <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -78,8 +77,8 @@
       <file leaf-file-name="confirmation_modal.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="323">
+              <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -147,10 +146,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/update_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/confirmation_modal.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
       </list>
     </option>
   </component>
@@ -220,13 +219,7 @@
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet-635" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ressources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
@@ -442,14 +435,7 @@
       <workItem from="1528062438597" duration="644000" />
       <workItem from="1528103436552" duration="2152000" />
       <workItem from="1528105674489" duration="7616000" />
-      <workItem from="1528123759043" duration="1610000" />
-    </task>
-    <task id="LOCAL-00001" summary="index.jsp redirection directives">
-      <created>1524826536279</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1524826536279</updated>
+      <workItem from="1528123759043" duration="4286000" />
     </task>
     <task id="LOCAL-00002" summary="trying to redirect index.jsp">
       <created>1524872551144</created>
@@ -780,15 +766,28 @@
       <option name="project" value="LOCAL" />
       <updated>1528112174402</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="- modale fonctionnelle">
+      <created>1528125649268</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1528125649269</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- modale fonctionnelle">
+      <created>1528126894216</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1528126894217</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168785000" />
+    <option name="totallyTimeSpent" value="171461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50364584" side_tool="true" weight="0.3717001" />
@@ -883,7 +882,8 @@
     <MESSAGE value="- remise en état partiel après avoir cherché a faire fonctionner le message modal" />
     <MESSAGE value="- update fonctionnel" />
     <MESSAGE value="- modales simples fonctionnelles pour update et ajout" />
-    <option name="LAST_COMMIT_MESSAGE" value="- modales simples fonctionnelles pour update et ajout" />
+    <MESSAGE value="- modale fonctionnelle" />
+    <option name="LAST_COMMIT_MESSAGE" value="- modale fonctionnelle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1099,13 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="14" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1123,17 +1116,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="275">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1144,17 +1130,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/main.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="75" column="113" lean-forward="true" selection-start-line="75" selection-start-column="92" selection-end-line="75" selection-end-column="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="-119">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#td#3;n#form#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="87" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
         </state>
       </provider>
     </entry>
