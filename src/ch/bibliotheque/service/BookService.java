@@ -1,4 +1,4 @@
-package ch.bibliotheque.dao;
+package ch.bibliotheque.service;
 
 import ch.bibliotheque.model.Book;
 

@@ -1,7 +1,6 @@
 package ch.bibliotheque.servlet;
 
-import ch.bibliotheque.dao.BookService;
-import ch.bibliotheque.model.Book;
+import ch.bibliotheque.service.BookService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

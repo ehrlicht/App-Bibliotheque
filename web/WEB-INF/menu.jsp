@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <span class="navbar-brand mb-0 h1 text-light">App Biblioth&egrave;que</span>
+    <a class="navbar-brand mb-0 h1 text-light">App Biblioth&egrave;que</a>
     <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>

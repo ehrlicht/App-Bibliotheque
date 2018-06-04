@@ -67,7 +67,8 @@
                         <td style="width: 17.5%"><input name="author" type="text" value="<%= book.getAuthor()%>"/></td>
                         <td style="width: 17.5%"><input name="publisher" type="text" value="<%= book.getPublisher()%>"/>
                         </td>
-                        <td style="width: 12.5%"><input name="year" type="number" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>"/></td>
+                        <td style="width: 12.5%"><input name="year" type="number" maxlength="4" min="-999" max="9999"
+                                                        value="<%= book.getYear()%>"/></td>
                         <td style="width: 10.5%" align="center">
                             <button type="submit" class="btn btn-outline-danger visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>

@@ -1,13 +1,13 @@
-package ch.bibliotheque.dao;
+package ch.bibliotheque.listener;
 
 import ch.bibliotheque.model.Book;
+import ch.bibliotheque.service.BookService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 import java.time.Year;
-import java.util.Date;
 
 @WebListener
 public class DataInitializer implements ServletContextListener {
