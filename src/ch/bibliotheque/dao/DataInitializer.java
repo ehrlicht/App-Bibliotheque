@@ -23,11 +23,11 @@ public class DataInitializer implements ServletContextListener {
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         if (bs.listAll().isEmpty()) {
             bs.save(new Book("Le Seigneur des Anneaux", "J.R.R. Tolkien", "Allen & Unwin", Year.of(1956)));
-            bs.save(new Book("Le Père Goriot", "Honoré de Balzac", "Edmond Werdet", Year.of(1835)));
-            bs.save(new Book("La Divine Comédie", "Dante Alighieri", "", Year.of(1472)));
-            bs.save(new Book("Crime et Châtiment", "Fiodor Dostoïevski", "Rousky vestnik", Year.of(1866)));
-            bs.save(new Book("Médée", "Euripide", "", Year.of(-431)));
-            bs.save(new Book("Le Château", "Franz Kafka", "Kurt Wolff Verlag", Year.of(1926)));
+            bs.save(new Book("Le Pere Goriot", "Honore de Balzac", "Edmond Werdet", Year.of(1835)));
+            bs.save(new Book("La Divine Comedie", "Dante Alighieri", "", Year.of(1472)));
+            bs.save(new Book("Crime et Chatiment", "Fiodor Dostoievski", "Rousky vestnik", Year.of(1866)));
+            bs.save(new Book("Medee", "Euripide", "", Year.of(-431)));
+            bs.save(new Book("Le Chateau", "Franz Kafka", "Kurt Wolff Verlag", Year.of(1926)));
             bs.save(new Book("Hamlet", "William Shakespeare", "", Year.of(1603)));
             bs.save(new Book("1984", "George Orwell", "Secker and Warburg",Year.of(1949)));
         }
