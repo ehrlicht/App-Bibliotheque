@@ -8,8 +8,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
     <style>
         #cssForm form { margin: 0 !important; padding: 0 !important; }
+        <%@include file="/styles/authentication_style.css" %>
+        table {
+            border-collapse: separate;
+            border-spacing: 1em;
+        }
+
+        form {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        #cssTable td {
+            vertical-align: middle;
+        }
+
+        table td input {
+            width: 100%;
+        }
     </style>
 </head>
 <body>

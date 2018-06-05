@@ -1,34 +1,6 @@
 <%@ page import="ch.bibliotheque.model.Book" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Liste des livres</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
-    <style type="text/css">
-        <%@include file="/styles/authentication_style.css" %>
-        table {
-            border-collapse: separate;
-            border-spacing: 1em;
-        }
-
-        form {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        #cssTable td {
-            vertical-align: middle;
-        }
-
-        table td input {
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
 <%@include file="menu.jsp" %>
 <div class="container-fluid">
     <div class="container">
