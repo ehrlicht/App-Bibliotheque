@@ -4,7 +4,7 @@
 <%@include file="menu.jsp" %>
 <div>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Home</a></li>
+        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Accueil</a></li>
         <li class="breadcrumb-item active">Livres</li>
     </ol>
 </div>
