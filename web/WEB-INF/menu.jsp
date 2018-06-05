@@ -37,14 +37,14 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand mb-0 h1 text-light">App Biblioth&egrave;que</a>
+    <a  href="<%=request.getContextPath()%>/main" class="navbar-brand mb-0 h1 text-light">App Biblioth&egrave;que</a>
     <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="btn btn-link float-center text-light" href="showBooks">Livres</a>
+                <a class="btn btn-link float-center text-light" style="font-size: 16px" href="showBooks">Livres</a>
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">

@@ -1,5 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="menu.jsp" %>
+<div>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Home</a></li>
+        <li class="breadcrumb-item active">Connexion</li>
+    </ol>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-6 col-12 text-center">
@@ -13,7 +19,7 @@
                 <div class="form-group has-danger">
                     <label>Identifiant</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" name="user" placeholder="Entrer l'identifiant" required autofocus>
+                        <input type="text" class="form-control" name="user" required autofocus>
                     </div>
                 </div>
             </div>
@@ -23,7 +29,7 @@
                 <div class="form-group">
                     <label>Mot de passe</label>
                     <div class="input-group">
-                        <input type="password" class="form-control" name="pwd" placeholder="Entrer le mot de passe" required>
+                        <input type="password" class="form-control" name="pwd" required>
                     </div>
                 </div>
             </div>

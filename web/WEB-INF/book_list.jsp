@@ -2,6 +2,12 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="menu.jsp" %>
+<div>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Home</a></li>
+        <li class="breadcrumb-item active">Livres</li>
+    </ol>
+</div>
 <div class="container-fluid">
     <div class="container">
         <div class="row justify-content-center">
@@ -12,12 +18,12 @@
         </div>
         <div class="table-responsive">
             <% List<Book> books = (List) request.getAttribute("books");%>
-            <table id="cssTable" class="table table-hover table-sm">
+            <table id="cssTable" class="table table-striped table-sm" style="border-collapse: collapse">
                 <thead>
                 <tr>
-                    <th class="text-left">Titre</th>
-                    <th class="text-left">Auteur(s)</th>
-                    <th class="text-left">Editeur</th>
+                    <th class="text-center">Titre</th>
+                    <th class="text-center">Auteur(s)</th>
+                    <th class="text-center">Editeur</th>
                     <th class="text-center">Année</th>
                         <% if (isAuthenticated) { %>
                     <th class="text-center">Modifier</th>
@@ -29,17 +35,15 @@
                 <tr>
                     <% if (isAuthenticated) { %>
                     <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
-                        <td><input name="title" class="form-control form-control-sm" type="text" value="<%= book.getTitle()%>"/></td>
+                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text" value="<%= book.getTitle()%>"/></td>
                         <td style="width: 17.5%"><input name="author"  class="form-control form-control-sm" type="text" value="<%= book.getAuthor()%>"/></td>
                         <td style="width: 17.5%"><input name="publisher"  class="form-control form-control-sm" type="text" value="<%= book.getPublisher()%>"/>
                         </td>
                         <td style="width: 12.5%">
-                            <div class="form-group has-feedback">
                                 <input name="year" class="form-control form-control-sm" type="number" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>" />
-                            </div>
                         </td>
                         <td style="width: 10.5%" align="center">
-                            <button type="submit" class="btn btn-outline-danger visible" name="id"
+                            <button type="submit" class="btn btn-outline-primary visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
                     </form>
                     </td>
@@ -50,7 +54,7 @@
                         </form>
                     </td>
                     <% } else { %>
-                    <td><%= book.getTitle()%>
+                    <td style="width: 20%"><%= book.getTitle()%>
                     </td>
                     <td><%= book.getAuthor()%>
                     </td>
