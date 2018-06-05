@@ -12,7 +12,7 @@
         </div>
         <div class="table-responsive">
             <% List<Book> books = (List) request.getAttribute("books");%>
-            <table id="cssTable" class="table table-bordered table-sm">
+            <table id="cssTable" class="table table-hover table-sm">
                 <thead>
                 <tr>
                     <th class="text-left">Titre</th>
@@ -29,12 +29,15 @@
                 <tr>
                     <% if (isAuthenticated) { %>
                     <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
-                        <td><input name="title" type="text" value="<%= book.getTitle()%>"/></td>
-                        <td style="width: 17.5%"><input name="author" type="text" value="<%= book.getAuthor()%>"/></td>
-                        <td style="width: 17.5%"><input name="publisher" type="text" value="<%= book.getPublisher()%>"/>
+                        <td><input name="title" class="form-control form-control-sm" type="text" value="<%= book.getTitle()%>"/></td>
+                        <td style="width: 17.5%"><input name="author"  class="form-control form-control-sm" type="text" value="<%= book.getAuthor()%>"/></td>
+                        <td style="width: 17.5%"><input name="publisher"  class="form-control form-control-sm" type="text" value="<%= book.getPublisher()%>"/>
                         </td>
-                        <td style="width: 12.5%"><input name="year" type="number" maxlength="4" min="-999" max="9999"
-                                                        value="<%= book.getYear()%>"/></td>
+                        <td style="width: 12.5%">
+                            <div class="form-group has-feedback">
+                                <input name="year" class="form-control form-control-sm" type="number" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>" />
+                            </div>
+                        </td>
                         <td style="width: 10.5%" align="center">
                             <button type="submit" class="btn btn-outline-danger visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
@@ -99,9 +102,7 @@
 </div>
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>

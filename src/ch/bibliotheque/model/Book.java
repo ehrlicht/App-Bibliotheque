@@ -63,5 +63,7 @@ public class Book {
         }
     }
 
-    public void setYear(Year year) { this.year = year; }
+    public void setYear(Year year) {
+        this.year = year;
+    }
 }
