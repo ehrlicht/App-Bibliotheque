@@ -12,6 +12,6 @@
     }</style>
 </head>
 <body>
-<img class="center" src="/ressources/404.jpg">
+<img class="center" src= "<%=request.getContextPath()%>/ressources/404.jpg">
 </body>
 </html>

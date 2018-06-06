@@ -13,6 +13,6 @@
     </style>
 </head>
 <body>
-<img class="center" src="/ressources/nullPointerError.jpg">
+<img class="center" src="<%=request.getContextPath()%>/ressources/nullPointerError.jpg">
 </body>
 </html>

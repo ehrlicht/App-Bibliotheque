@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/menu.jsp" %>
 <div class="container-fluid">
@@ -11,7 +12,7 @@
                 </span>
             </div>
             <div class="col-md-auto">
-                <img class="rounded img-fluid" src="/ressources/lib.jpg" style="width:450px" class="rounded"></div>
+                <img class="rounded img-fluid" src="<%=request.getContextPath()%>/ressources/lib.jpg" style="width:450px" class="rounded"></div>
         </div>
         <hr>
     </div>

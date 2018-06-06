@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="table-responsive" style="max-height: 600px; overflow: auto">
-            <% List<Book> books = (List) request.getAttribute("books");%>
+            <% List<Book> books = (List) request.getAttribute("books");1%>
             <table id="cssTable" class="table table-striped table-sm" style="border-collapse: collapse">
                 <thead>
                 <tr>
@@ -68,7 +68,7 @@
                     </form>
                     </td>
                     <td style="width: 10.5%" align="center">
-                        <form class="form-horizontal" action="removeBook" method="post">
+                        <form class="form-horizontal" action="<%=request.getContextPath()%>/removeBook" method="post">
                             <button type="submit" class="btn btn-outline-danger visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-trash-alt"></i></button>
                         </form>

@@ -44,11 +44,11 @@
     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsibleNavbar">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-                <a class="btn btn-link float-center text-light" style="font-size: 16px" href="showBooks">Livres</a>
+                <a class="btn btn-link float-center text-light" style="font-size: 16px" href="<%=request.getContextPath()%>/showBooks">Livres</a>
             </li>
         </ul>
         <div class="nav navbar-nav flex-row float-right flex-nowrap" style="margin-left: 80px">
-            <form id="cssForm" method="get" action="authenticate".>
+            <form id="cssForm" method="get" action="<%=request.getContextPath()%>/authenticate".>
                 <% if (request.getRequestURI().equals("/WEB-INF/authentication.jsp")) { %>
                     <button class="btn btn-danger navbar-btn invisible">Connexion</button>
                 <% } else { %>

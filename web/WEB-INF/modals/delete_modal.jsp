@@ -12,11 +12,10 @@
                 <h6>Le livre a été supprimé.</h6>
             </div>
             <div class="modal-footer">
-                <form method="get" action="showBooks">
+                <form method="get" action="<%=request.getContextPath()%>/showBooks">
                 <button type="submit" class="btn btn-secondary" data-dismiss="modal">Ok</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-

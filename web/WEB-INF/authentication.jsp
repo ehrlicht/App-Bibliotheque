@@ -13,7 +13,7 @@
             <hr>
         </div>
     </div>
-    <form class="form-horizontal" action="authenticate" method="post">
+    <form class="form-horizontal" action="<%=request.getContextPath()%>/authenticate" method="post">
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-4 col-12">
                 <div class="form-group has-danger">

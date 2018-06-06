@@ -42,7 +42,7 @@ public class AddBookServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/showBooks");
         } else {
             req.setAttribute("errorMessage",true);
-            req.getRequestDispatcher(req.getContextPath() +"/WEB-INF/add_book.jsp").forward(req,resp);
+            req.getRequestDispatcher("/WEB-INF/add_book.jsp").forward(req,resp);
         }
     }
 }

@@ -1,7 +1,7 @@
 package ch.bibliotheque.servlet;
 
-import ch.bibliotheque.service.BookService;
 import ch.bibliotheque.model.Book;
+import ch.bibliotheque.service.BookService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -16,7 +16,7 @@ public class BookListServlet extends HttpServlet {
     private final BookService bs;
 
     @Inject
-    public BookListServlet (BookService bs) {
+    public BookListServlet(BookService bs) {
         this.bs = bs;
     }
 
@@ -24,11 +24,6 @@ public class BookListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Book> books = bs.listAll();
         req.setAttribute("books", books);
-        req.getRequestDispatcher(req.getContextPath() + "/WEB-INF/book_list.jsp").forward(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doPost BookListServlet");
+        req.getRequestDispatcher("/WEB-INF/book_list.jsp").forward(req, resp);
     }
 }

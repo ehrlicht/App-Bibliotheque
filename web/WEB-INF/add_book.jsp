@@ -4,8 +4,8 @@
 <%@include file="menu.jsp" %>
 <div>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Accueil</a></li>
-        <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/showBooks" %>">Livres</a></li>
+        <li class="breadcrumb-item"><a href="<%=request.getContextPath()+"/main" %>">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="<%=request.getContextPath()+"/showBooks" %>">Livres</a></li>
         <li class="breadcrumb-item active">Nouveau Livre</li>
     </ol>
 </div>
@@ -16,7 +16,7 @@
             <hr>
         </div>
     </div>
-    <form id="form_newBook" class="form-horizontal" method="post" action="addBook">
+    <form id="form_newBook" class="form-horizontal" method="post" action="<%=request.getContextPath()%>/addBook">
 
         <div class="row justify-content-center align-items-left">
             <div class="col-xl-6 col-12">
