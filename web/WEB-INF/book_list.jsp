@@ -32,7 +32,7 @@
                 <hr>
             </div>
         </div>
-        <div class="table-responsive" style="max-height: 500px; overflow: auto">
+        <div class="table-responsive" style="max-height: 600px; overflow: auto">
             <% List<Book> books = (List) request.getAttribute("books");%>
             <table id="cssTable" class="table table-striped table-sm" style="border-collapse: collapse">
                 <thead>
