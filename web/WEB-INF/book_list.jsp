@@ -51,36 +51,36 @@
                 <tr>
                     <% if (isAuthenticated) { %>
                     <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
-                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text"
+                        <td style="width: 25%"><input name="title" class="form-control form-control-sm" type="text"
                                                       required="true" value="<%= book.getTitle()%>"/></td>
                         <td style="width: 17.5%"><input name="author" class="form-control form-control-sm" type="text"
                                                         value="<%= book.getAuthor()%>"/></td>
-                        <td style="width: 17.5%"><input name="publisher" class="form-control form-control-sm"
+                        <td style="width: 12.5%"><input name="publisher" class="form-control form-control-sm"
                                                         type="text" value="<%= book.getPublisher()%>"/>
                         </td>
                         <td style="width: 10.5%">
                             <input name="year" centered class="form-control form-control-sm text-center" type="number"
                                    required="true" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>"/>
                         </td>
-                        <td style="width: 10.5%" align="center">
+                        <td style="width: 5%" align="center">
                             <button type="submit" class="btn btn-outline-primary visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-edit"></i></button>
                     </form>
                     </td>
-                    <td style="width: 10.5%" align="center">
+                    <td style="width: 5%" align="center">
                         <form class="form-horizontal" action="<%=request.getContextPath()%>/removeBook" method="post">
                             <button type="submit" class="btn btn-outline-danger visible" name="id"
                                     value="<%= book.getId() %>"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </td>
                     <% } else { %>
-                    <td style="width: 20%"><%= book.getTitle()%>
+                    <td style="width: 25%"><%= book.getTitle()%>
                     </td>
-                    <td><%= book.getAuthor()%>
+                    <td style="width: 17.5%"><%= book.getAuthor()%>
                     </td>
-                    <td><%= book.getPublisher()%>
+                    <td style="width: 12.5%"><%= book.getPublisher()%>
                     </td>
-                    <td class="text-center"><%= book.getFormattedYear()%>
+                    <td class="text-center" style="width: 10.5%"><%= book.getFormattedYear()%>
                     </td>
                     <% }%>
                 </tr>
