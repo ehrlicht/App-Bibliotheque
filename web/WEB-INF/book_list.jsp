@@ -3,15 +3,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="menu.jsp" %>
 <style>
-    input[type="text"]
-    {
+    input[type="text"], input[type="number"] {
         background: transparent;
-        border: none;
+        border: 1px solid transparent;
     }
-    input[type="number"]
-    {
+
+    input[type="text"]:hover, input[type="number"]:hover {
         background: transparent;
-        border: none;
+        border: 1px solid lightblue;
+    }
+
+    input[type="text"]:focus, input[type="number"]:focus {
+        background: transparent;
+        border: 1px solid lightblue;
     }
 </style>
 <div>
@@ -47,12 +51,16 @@
                 <tr>
                     <% if (isAuthenticated) { %>
                     <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
-                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text" required="true" value="<%= book.getTitle()%>"/></td>
-                        <td style="width: 17.5%"><input name="author"  class="form-control form-control-sm" type="text" value="<%= book.getAuthor()%>"/></td>
-                        <td style="width: 17.5%"><input name="publisher"  class="form-control form-control-sm" type="text" value="<%= book.getPublisher()%>"/>
+                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text"
+                                                      required="true" value="<%= book.getTitle()%>"/></td>
+                        <td style="width: 17.5%"><input name="author" class="form-control form-control-sm" type="text"
+                                                        value="<%= book.getAuthor()%>"/></td>
+                        <td style="width: 17.5%"><input name="publisher" class="form-control form-control-sm"
+                                                        type="text" value="<%= book.getPublisher()%>"/>
                         </td>
-                        <td style="width: 12.5%">
-                                <input name="year" centered class="form-control form-control-sm text-center" type="number" required="true" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>" />
+                        <td style="width: 10.5%">
+                            <input name="year" centered class="form-control form-control-sm text-center" type="number"
+                                   required="true" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>"/>
                         </td>
                         <td style="width: 10.5%" align="center">
                             <button type="submit" class="btn btn-outline-primary visible" name="id"
