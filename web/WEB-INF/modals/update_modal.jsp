@@ -8,8 +8,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <h6>Le livre a été mis à jour avec succès.</h6>
+            <div class="modal-body text-left">
+                <p>Le livre a été mis à jour avec succès.</p>
             </div>
             <div class="modal-footer">
                 <form method="get" action="<%=request.getContextPath()%>/showBooks">

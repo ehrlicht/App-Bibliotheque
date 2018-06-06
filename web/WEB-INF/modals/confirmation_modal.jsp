@@ -8,12 +8,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <h6>Le livre a été ajouté avec succès.</h6>
+            <div class="modal-body text-left">
+                <p>Le livre a été ajouté à la base de données avec succès.</p>
             </div>
             <div class="modal-footer">
                 <form method="get" action="<%=request.getContextPath()%>/showBooks">
-                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Ok</button>
                 </form>
             </div>
         </div>
