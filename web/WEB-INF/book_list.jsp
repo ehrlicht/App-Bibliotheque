@@ -2,6 +2,18 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="menu.jsp" %>
+<style>
+    input[type="text"]
+    {
+        background: transparent;
+        border: none;
+    }
+    input[type="number"]
+    {
+        background: transparent;
+        border: none;
+    }
+</style>
 <div>
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="<%= request.getContextPath()+"/main" %>">Accueil</a></li>
@@ -21,9 +33,9 @@
             <table id="cssTable" class="table table-striped table-sm" style="border-collapse: collapse">
                 <thead>
                 <tr>
-                    <th class="text-center">Titre</th>
-                    <th class="text-center">Auteur(s)</th>
-                    <th class="text-center">Editeur</th>
+                    <th class="text-left">Titre</th>
+                    <th class="text-left">Auteur(s)</th>
+                    <th class="text-left">Editeur</th>
                     <th class="text-center">Année</th>
                         <% if (isAuthenticated) { %>
                     <th class="text-center">Modifier</th>
@@ -35,12 +47,12 @@
                 <tr>
                     <% if (isAuthenticated) { %>
                     <form class="form-horizontal" action="<%= request.getContextPath()+"/updateBook"%>" method="post">
-                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text" value="<%= book.getTitle()%>"/></td>
+                        <td style="width: 20%"><input name="title" class="form-control form-control-sm" type="text" required="true" value="<%= book.getTitle()%>"/></td>
                         <td style="width: 17.5%"><input name="author"  class="form-control form-control-sm" type="text" value="<%= book.getAuthor()%>"/></td>
                         <td style="width: 17.5%"><input name="publisher"  class="form-control form-control-sm" type="text" value="<%= book.getPublisher()%>"/>
                         </td>
                         <td style="width: 12.5%">
-                                <input name="year" class="form-control form-control-sm" type="number" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>" />
+                                <input name="year" centered class="form-control form-control-sm text-center" type="number" required="true" maxlength="4" min="-999" max="9999" value="<%= book.getYear()%>" />
                         </td>
                         <td style="width: 10.5%" align="center">
                             <button type="submit" class="btn btn-outline-primary visible" name="id"
