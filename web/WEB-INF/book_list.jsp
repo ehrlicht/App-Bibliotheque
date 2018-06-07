@@ -32,7 +32,7 @@
                 <hr>
             </div>
         </div>
-        <div class="table-responsive" style="max-height: 450px; overflow: auto">
+        <div class="table-responsive" style="max-height: 400px; overflow: auto">
             <% List<Book> books = (List) request.getAttribute("books");%>
             <table id="cssTable" class="table table-striped table-sm" style="border-collapse: collapse">
                 <thead>
@@ -102,7 +102,6 @@
                 });
             </script>
             <% } %>
-
         </div>
     </div>
     <hr>
@@ -110,8 +109,8 @@
     <% session.setAttribute("bookUpdated", false); %>
     <%@ include file="/WEB-INF/alerts/book_updated_alert.jsp" %>
     <script>
-        window.setTimeout(function() {
-            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
                 $(this).remove();
             });
         }, 2000);
@@ -121,8 +120,8 @@
     <% session.setAttribute("bookDeleted", false); %>
     <%@ include file="/WEB-INF/alerts/book_deleted_alert.jsp" %>
     <script>
-        window.setTimeout(function() {
-            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
                 $(this).remove();
             });
         }, 2000);

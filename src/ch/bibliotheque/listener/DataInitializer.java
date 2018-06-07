@@ -35,7 +35,7 @@ public class DataInitializer implements ServletContextListener {
             bs.save(new Book("Germinal", "Emile Zola", "Gil Blas",Year.of(1885)));
             bs.save(new Book("Vingt mille lieues sous les mers", "Jules Verne", "Pierre-Jules Hetzel",Year.of(1869)));
             bs.save(new Book("Les Trois Mousquetaires", "Alexandre Dumas", "Le Siecle",Year.of(1844)));
-            bs.save(new Book("Les Aventures de Tintin, tome 1 : Tintin au pays des Soviets", "Herge", "Casterman",Year.of(1930)));
+            bs.save(new Book("Les Aventures de Tintin : Tintin au pays des Soviets", "Herge", "Casterman",Year.of(1930)));
             bs.save(new Book("L'Assommoir", "Emile Zola", "G. Charpentier, Paris",Year.of(1877)));
             bs.save(new Book("Jane Eyre", "Charlotte Bronte", "Smith, Elder & Co.",Year.of(1847)));
         }
