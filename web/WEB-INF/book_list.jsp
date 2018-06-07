@@ -88,11 +88,11 @@
                 </tbody>
             </table>
         </div>
+        <p></p>
         <div class="text-right">
             <% if (isAuthenticated) { %>
             <a href="<%= request.getContextPath()+"/addBook"%>" class="btn btn-info" role="button">Ajouter un livre</a>
             <% } %>
-
             <% if (Boolean.TRUE.equals(session.getAttribute("bookAdded"))) { %>
             <% session.setAttribute("bookAdded", false); %>
             <%@ include file="/WEB-INF/modals/confirmation_modal.jsp" %>
@@ -102,27 +102,32 @@
                 });
             </script>
             <% } %>
-            <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
-            <% session.setAttribute("bookUpdated", false); %>
-            <%@ include file="/WEB-INF/updated_message.jsp" %>
-            <!--<script>
-                $(window).on('load', function () {
-                    $('#myModal').modal('show');
-                });
-            </script>-->
-            <% } %>
-            <% if (Boolean.TRUE.equals(session.getAttribute("bookDeleted"))) { %>
-            <% session.setAttribute("bookDeleted", false); %>
-            <%@ include file="/WEB-INF/deleted_message.jsp" %>
-            <!--<script>
-                $(window).on('load', function () {
-                    $('#myModal').modal('show');
-                });
-            </script>-->
-            <% } %>
+
         </div>
     </div>
     <hr>
+    <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
+    <% session.setAttribute("bookUpdated", false); %>
+    <%@ include file="/WEB-INF/alerts/book_updated_alert.jsp" %>
+    <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+    <% } %>
+    <% if (Boolean.TRUE.equals(session.getAttribute("bookDeleted"))) { %>
+    <% session.setAttribute("bookDeleted", false); %>
+    <%@ include file="/WEB-INF/alerts/book_deleted_alert.jsp" %>
+    <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+    <% } %>
 </div>
 </body>
 </html>

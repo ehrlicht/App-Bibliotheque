@@ -6,7 +6,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="<%=request.getContextPath()+"/main" %>">Accueil</a></li>
         <li class="breadcrumb-item"><a href="<%=request.getContextPath()+"/showBooks" %>">Livres</a></li>
-        <li class="breadcrumb-item active">Nouveau Livre</li>
+        <li class="breadcrumb-item active">Ajouter un Livre</li>
     </ol>
 </div>
 <div class="container">
@@ -73,7 +73,7 @@
             </div>
         </div>
         <% if((Boolean)request.getAttribute("errorMessage")){ %>
-        <%@include file="error-pages/add_book_error.jsp"%>
+        <%@include file="alerts/add_book_error_alert.jsp"%>
         <%}%>
     </form>
 </div>
