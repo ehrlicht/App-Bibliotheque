@@ -104,21 +104,21 @@
             <% } %>
             <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
             <% session.setAttribute("bookUpdated", false); %>
-            <%@ include file="/WEB-INF/modals/update_modal.jsp" %>
-            <script>
+            <%@ include file="/WEB-INF/updated_message.jsp" %>
+            <!--<script>
                 $(window).on('load', function () {
                     $('#myModal').modal('show');
                 });
-            </script>
+            </script>-->
             <% } %>
             <% if (Boolean.TRUE.equals(session.getAttribute("bookDeleted"))) { %>
             <% session.setAttribute("bookDeleted", false); %>
-            <%@ include file="/WEB-INF/modals/delete_modal.jsp" %>
-            <script>
+            <%@ include file="/WEB-INF/deleted_message.jsp" %>
+            <!--<script>
                 $(window).on('load', function () {
                     $('#myModal').modal('show');
                 });
-            </script>
+            </script>-->
             <% } %>
         </div>
     </div>
