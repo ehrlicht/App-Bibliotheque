@@ -18,11 +18,9 @@ public class BookService {
     @PersistenceContext
     private EntityManager em;
 
-
     public void save(Book book) {
         em.persist(book);
     }
-
 
     public void remove(int id) {
         Book book = em.find(Book.class, id);
