@@ -23,7 +23,8 @@ public class Book {
         this.year = year;
     }
 
-    public Book() {}
+    public Book() {
+    }
 
     public long getId() {
         return id;
@@ -33,16 +34,20 @@ public class Book {
         return title;
     }
 
-    public void setTitle(String title) { this.title = title; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getPublisher() {
         if (publisher.isEmpty()) {
-                return "Aucun";
+            return "Aucun";
         }
         return publisher;
     }
 
-    public void setPublisher(String publisher) { this.publisher = publisher; }
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
 
     public String getAuthor() {
         if (author.isEmpty()) {
@@ -51,14 +56,18 @@ public class Book {
         return author;
     }
 
-    public void setAuthor(String author) { this.author = author; }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-    public Year getYear() { return year; }
+    public Year getYear() {
+        return year;
+    }
 
     public String getFormattedYear() {
         if (year.getValue() >= 0) {
             return year.toString();
-        } else  {
+        } else {
             return Math.abs(year.getValue()) + " avant J.C.";
         }
     }

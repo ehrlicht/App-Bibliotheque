@@ -5,13 +5,13 @@
     <title>Error 404 - Page Not Found</title>
     <style>
         .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 35%;
-    }</style>
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        }</style>
 </head>
 <body>
-<img class="center" src= "<%=request.getContextPath()%>/ressources/404.jpg">
+<img class="center" src="<%=request.getContextPath()%>/ressources/404.jpg">
 </body>
 </html>

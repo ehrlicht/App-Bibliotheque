@@ -28,7 +28,8 @@ public class BookService {
         Book book = em.find(Book.class, id);
         em.remove(book);
     }
-    public void updateBook(String title,String author, String publisher, Year year, int id){
+
+    public void updateBook(String title, String author, String publisher, Year year, int id) {
         Book book_ = em.find(Book.class, id);
         book_.setTitle(title);
         book_.setAuthor(author);

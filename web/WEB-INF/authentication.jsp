@@ -36,13 +36,15 @@
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-xl-4 col-12">
-                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i>Se connecter</button>
+                <button type="submit" class="btn btn-outline-secondary btn-block"><i class="fa fa-sign-in"></i>Se
+                    connecter
+                </button>
             </div>
         </div>
     </form>
     <p></p>
-    <% if ((boolean)request.getAttribute("loginError")) { %>
-        <%@include file="alerts/authentication_error_alert.jsp" %>
+    <% if ((boolean) request.getAttribute("loginError")) { %>
+    <%@include file="alerts/authentication_error_alert.jsp" %>
     <% } %>
 </div>
 </body>

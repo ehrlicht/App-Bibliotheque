@@ -14,10 +14,10 @@ public class AuthenticationServlet extends HttpServlet {
         String pwd = req.getParameter("pwd");
         try {
             req.login(user, pwd);
-            resp.sendRedirect(req.getContextPath() +"/main");
+            resp.sendRedirect(req.getContextPath() + "/main");
         } catch (ServletException se) {
             req.setAttribute("loginError", true);
-            req.getRequestDispatcher( "/WEB-INF/authentication.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/authentication.jsp").forward(req, resp);
         }
     }
 
