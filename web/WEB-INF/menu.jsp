@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    boolean isAuthenticated = request.isUserInRole("ADMIN");
+    boolean isAuthenticated = request.isUserInRole("ADMIN-AB");
 %>
 <html>
 <head>
