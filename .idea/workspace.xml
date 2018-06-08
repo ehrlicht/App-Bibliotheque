@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="projet-635:war" />
       <artifact name="projet-635:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="797f21aa-cc5a-42c7-bd8d-c0c468a55c9e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/ressources/404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/ressources/lib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/ressources/nullPointerError.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/styles/authentication_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,22 +18,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/projet_635$TomEE_8_5_20.ic" NAME="TomEE 8.5.20 Coverage Results" MODIFIED="1528438600044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
+      <file leaf-file-name="authentication.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+            <state relative-caret-position="543">
+              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java">
+      <file leaf-file-name="book_list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="-1225">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4">
+              <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+              <folding>
+                <element signature="e#170#178#0#HTML" expanded="true" />
+                <element signature="e#1479#1487#0#HTML" expanded="true" />
+                <element signature="e#2579#2587#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddBookServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_book.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookListServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -46,26 +112,8 @@
       <file leaf-file-name="RemoveBookServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateBookServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="255">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -83,6 +131,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>action</find>
+      <find>ADMIN</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,9 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/DataInitializer.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/MainServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/AuthenticationServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/NewBookServlet.java" />
         <option value="$PROJECT_DIR$/src/metier/Book.java" />
         <option value="$PROJECT_DIR$/web/styles/authentication_style.css" />
@@ -117,14 +163,10 @@
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/dao/DataInitializer.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" />
         <option value="$PROJECT_DIR$/web/styles/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java" />
-        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/main.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/add_book.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/npe.jsp" />
@@ -133,15 +175,22 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/authentication.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/deleted_message.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/updated_message.jsp" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java" />
         <option value="$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/authentication.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/book_list.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/alerts/book_deleted_alert.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/alerts/book_updated_alert.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/alerts/authentication_error_alert.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java" />
+        <option value="$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java" />
       </list>
     </option>
   </component>
@@ -192,8 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,57 +251,46 @@
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_635_war" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_635_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_635_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliotheque" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet-635" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="ressources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-635" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projet-635" type="b2602c69:ProjectViewProjectNode" />
@@ -287,7 +323,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,151 +352,6 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="C:\Users\mgtub\switchdrive\HEG\Semestre 6\Programmation\Pratique\projet-635\src" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/projet-635.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/add_book.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/authentication.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/book_list.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/error-pages/404.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/main.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/menu.jsp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/alerts/add_book_error_alert.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/alerts/authentication_error_alert.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/alerts/book_deleted_alert.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/alerts/book_updated_alert.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/ressources/404.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/ressources/lib.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/ressources/nullPointerError.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/styles/authentication_style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/styles/style.css</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/artifacts/projet_635_war.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/artifacts/projet_635_war_exploded.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/jsLibraryMappings.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/uiDesigner.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/vcs.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/deleted_message.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/error-pages/add_book_error.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/updated_message.jsp</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -653,42 +546,11 @@
       <workItem from="1528238414895" duration="6178000" />
       <workItem from="1528315694452" duration="1405000" />
       <workItem from="1528318996072" duration="8164000" />
-      <workItem from="1528379920602" duration="4003000" />
-    </task>
-    <task id="LOCAL-00015" summary="basic links for booklist and connexion done">
-      <created>1525171590317</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1525171590317</updated>
-    </task>
-    <task id="LOCAL-00016" summary="basic links for booklist and connexion done">
-      <created>1525815613567</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1525815613568</updated>
-    </task>
-    <task id="LOCAL-00017" summary="basic links for booklist and connexion done">
-      <created>1525818056336</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1525818056336</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Comportement bar de menu avec bouton de connexion qui s'affiche et se cache correctement">
-      <created>1525867003437</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1525867003437</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Comportement bar de menu avec bouton de connexion qui s'affiche et se cache correctement">
-      <created>1525867093181</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1525867093181</updated>
+      <workItem from="1528379920602" duration="8742000" />
+      <workItem from="1528422893297" duration="552000" />
+      <workItem from="1528437977758" duration="724000" />
+      <workItem from="1528439259057" duration="126000" />
+      <workItem from="1528442583720" duration="1349000" />
     </task>
     <task id="LOCAL-00020" summary="lien livres coloré et sous-ligné">
       <created>1525868011362</created>
@@ -998,11 +860,46 @@
       <option name="project" value="LOCAL" />
       <updated>1528381571256</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="- changement des modales update et delete en alertes">
+      <created>1528406536725</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1528406536725</updated>
+    </task>
+    <task id="LOCAL-00065" summary="- changement des modales update et delete en alertes">
+      <created>1528423433199</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1528423433200</updated>
+    </task>
+    <task id="LOCAL-00066" summary="- changement des modales update et delete en alertes">
+      <created>1528438676149</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1528438676150</updated>
+    </task>
+    <task id="LOCAL-00067" summary="- changement des modales update et delete en alertes">
+      <created>1528439344436</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1528439344437</updated>
+    </task>
+    <task id="LOCAL-00068" summary="- changement des modales update et delete en alertes">
+      <created>1528442682546</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1528442682547</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199416000" />
+    <option name="totallyTimeSpent" value="206906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1020,7 +917,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49635416" visible="true" weight="0.27666315" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49635416" weight="0.27666315" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3273495" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1040,6 +937,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32946146" />
@@ -1111,10 +1009,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nouveauServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/acceuilServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1194,26 +1088,14 @@
     <entry file="file://$PROJECT_DIR$/web/ressources/404.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/add_book_error.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/deleted_message.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/updated_message.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet-635.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1222,10 +1104,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/main.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="408">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/alerts/add_book_error_alert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="81" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/alerts/authentication_error_alert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/alerts/book_deleted_alert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/alerts/book_updated_alert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1238,11 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/500.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="340">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#dix#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1253,125 +1174,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="104" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/authentication_error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/confirmation_modal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/update_modal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/error-pages/add_book_error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/modals/delete_modal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/UpdateBookServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="136">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/deleted_message.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/RemoveBookServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/updated_message.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="91" lean-forward="true" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+        <state relative-caret-position="136">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/listener/DataInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/BookListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="238">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-635.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/service/BookService.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AuthenticationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/bibliotheque/servlet/AddBookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <folding>
+            <element signature="e#170#178#0#HTML" expanded="true" />
+            <element signature="e#1479#1487#0#HTML" expanded="true" />
+            <element signature="e#2579#2587#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/book_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1225">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/authentication.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/add_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1430,12 +1318,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>projet-635</last-edited>
+          <last-edited>JPA|projet-635</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.22200957" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
