@@ -33,6 +33,7 @@ public class AddBookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
         req.setAttribute("errorMessage", false);
         String title = req.getParameter("title");
         String author = req.getParameter("author");
