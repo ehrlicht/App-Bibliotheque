@@ -23,7 +23,7 @@ public class AuthenticationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (!req.isUserInRole("ADMIN-AB")) {
+        if (!req.isUserInRole("ADMIN")) {
             req.setAttribute("loginError", false);
             req.getRequestDispatcher("/WEB-INF/authentication.jsp").forward(req, resp);
         } else {

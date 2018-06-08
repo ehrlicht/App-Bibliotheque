@@ -23,7 +23,7 @@ public class AddBookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.isUserInRole("ADMIN-AB")) {
+        if (req.isUserInRole("ADMIN")) {
             req.setAttribute("errorMessage", false);
             req.getRequestDispatcher("/WEB-INF/add_book.jsp").include(req, resp);
         } else {
