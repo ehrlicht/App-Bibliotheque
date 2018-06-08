@@ -17,6 +17,7 @@
         background: transparent;
         border: 1px solid lightblue;
     }
+
 </style>
 <div>
     <ol class="breadcrumb">
@@ -103,7 +104,7 @@
             </script>
             <% } %>
         </div>
-    </div>
+    </div >
     <hr>
     <% if (Boolean.TRUE.equals(session.getAttribute("bookUpdated"))) { %>
     <% session.setAttribute("bookUpdated", false); %>

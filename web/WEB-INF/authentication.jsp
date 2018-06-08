@@ -42,7 +42,7 @@
             </div>
         </div>
     </form>
-    <p></p>
+    <br>
     <% if ((boolean) request.getAttribute("loginError")) { %>
     <%@include file="alerts/authentication_error_alert.jsp" %>
     <% } %>
